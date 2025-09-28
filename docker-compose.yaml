@@ -1,0 +1,53 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: pgvector/pgvector:pg18
+    container_name: postgres-cvevaluator
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    restart: always
+    ports:
+      - 5432:5432
+    volumes:
+      - postgresql-volume:/var/lib/postgresql/data
+    networks:
+      - cv-evaluator-network
+
+  adminer:
+    image: adminer
+    container_name: adminer-cvevaluator
+    restart: always
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 521m
+    ports:
+      - 8005:8080
+    networks:
+      - cv-evaluator-network
+
+  redis:
+    image: redis/redis-stack
+    container_name: redis-cvevaluator
+    restart: always
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 1g
+    ports:
+      - 6379:6379
+      - 8001:8001
+    networks:
+      - cv-evaluator-network
+
+volumes:
+  postgresql-volume:
+
+networks:
+  cv-evaluator-network:
+    name: cv-evaluator-network
