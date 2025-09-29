@@ -1042,3 +1042,796 @@
 28-09-2025 15:05:28:528 [32minfo[39m: [32mConnected to Redis via ioredis![39m
 28-09-2025 15:06:11:611 [32minfo[39m: [32mServer is running on port 3000[39m
 28-09-2025 15:06:11:611 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+28-09-2025 15:38:16:3816 [32minfo[39m: [32mServer is running on port 3000[39m
+28-09-2025 15:38:16:3816 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+28-09-2025 15:43:03:433 [32minfo[39m: [32mServer is running on port 3000[39m
+28-09-2025 15:43:03:433 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+28-09-2025 15:43:30:4330 [36mhttp[39m: [36m::1 POST /api/v1/cv/upload 201 851 - 246.799 ms[39m
+[36m[39m
+28-09-2025 15:44:02:442 [36mhttp[39m: [36m::1 POST /api/v1/cv/evaluate 202 52 - 37.158 ms[39m
+[36m[39m
+28-09-2025 15:44:02:442 [32minfo[39m: [32mProcessing job cmg3e8m4l0004i0shcl8obo0h...[39m
+28-09-2025 16:11:22:1122 [32minfo[39m: [32mServer is running on port 3000[39m
+28-09-2025 16:11:22:1122 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+28-09-2025 16:11:27:1127 [32minfo[39m: [32mServer is running on port 3000[39m
+28-09-2025 16:11:27:1127 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+28-09-2025 16:14:55:1455 [32minfo[39m: [32mServer is running on port 3000[39m
+28-09-2025 16:14:55:1455 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+28-09-2025 16:15:06:156 [36mhttp[39m: [36m::1 POST /api/v1/cv/upload 201 851 - 371.155 ms[39m
+[36m[39m
+28-09-2025 16:15:30:1530 [36mhttp[39m: [36m::1 POST /api/v1/cv/evaluate 202 52 - 36.286 ms[39m
+[36m[39m
+28-09-2025 16:15:30:1530 [32minfo[39m: [32mProcessing job cmg3fd31j0004i0d2tynvag19...[39m
+28-09-2025 16:40:54:4054 [32minfo[39m: [32mServer is running on port 3000[39m
+28-09-2025 16:40:54:4054 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+28-09-2025 16:41:54:4154 [32minfo[39m: [32mServer is running on port 3000[39m
+28-09-2025 16:41:54:4154 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+28-09-2025 16:42:15:4215 [36mhttp[39m: [36m::1 POST /api/v1/cv/evaluate 202 52 - 199.152 ms[39m
+[36m[39m
+28-09-2025 16:42:15:4215 [32minfo[39m: [32mProcessing job cmg3gbh5v0001i0xofq2p6uhf...[39m
+28-09-2025 16:59:34:5934 [32minfo[39m: [32mServer is running on port 3000[39m
+28-09-2025 16:59:34:5934 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+28-09-2025 17:06:45:645 [32minfo[39m: [32mServer is running on port 3000[39m
+28-09-2025 17:06:46:646 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+28-09-2025 17:16:12:1612 [32minfo[39m: [32mServer is running on port 3000[39m
+28-09-2025 17:16:12:1612 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+28-09-2025 17:16:50:1650 [32minfo[39m: [32mServer is running on port 3000[39m
+28-09-2025 17:16:50:1650 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+28-09-2025 17:17:30:1730 [36mhttp[39m: [36m::1 POST /api/v1/cv/evaluate 202 52 - 145.344 ms[39m
+[36m[39m
+28-09-2025 17:17:30:1730 [32minfo[39m: [32mProcessing job cmg3hksxz0001i0h6h3k7loum...[39m
+28-09-2025 20:47:32:4732 [36mhttp[39m: [36m::1 POST /api/v1/cv/upload 201 851 - 71.743 ms[39m
+[36m[39m
+28-09-2025 20:48:10:4810 [36mhttp[39m: [36m::1 POST /api/v1/cv/evaluate 202 52 - 16.505 ms[39m
+[36m[39m
+28-09-2025 20:48:10:4810 [32minfo[39m: [32mProcessing job cmg3p3q2u0006i0h6yuhf9na7...[39m
+28-09-2025 20:55:24:5524 [32minfo[39m: [32mServer is running on port 3000[39m
+28-09-2025 20:55:24:5524 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+28-09-2025 23:44:53:4453 [32minfo[39m: [32mServer is running on port 3000[39m
+28-09-2025 23:44:53:4453 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+28-09-2025 23:45:42:4542 [32minfo[39m: [32mServer is running on port 3000[39m
+28-09-2025 23:45:42:4542 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+28-09-2025 23:53:54:5354 [32minfo[39m: [32mServer is running on port 3000[39m
+28-09-2025 23:53:54:5354 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+28-09-2025 23:55:39:5539 [32minfo[39m: [32mServer is running on port 3000[39m
+28-09-2025 23:55:39:5539 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+28-09-2025 23:56:02:562 [36mhttp[39m: [36m::1 POST /api/v1/cv/evaluate 202 52 - 130.642 ms[39m
+[36m[39m
+28-09-2025 23:56:02:562 [32minfo[39m: [32mProcessing job cmg3vtc570001i0o5tl7c7fkj...[39m
+28-09-2025 23:56:09:569 [36mhttp[39m: [36m::1 POST /api/v1/cv/result/cmg3vtc570001i0o5tl7c7fkj 404 182 - 3.003 ms[39m
+[36m[39m
+28-09-2025 23:56:17:5617 [31merror[39m: [31mGet Result Error: resultService is not defined[39m
+28-09-2025 23:56:17:5617 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg3vtc570001i0o5tl7c7fkj 500 35 - 4.195 ms[39m
+[36m[39m
+28-09-2025 23:57:09:579 [32minfo[39m: [32mServer is running on port 3000[39m
+28-09-2025 23:57:09:579 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+28-09-2025 23:57:13:5713 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg3vtc570001i0o5tl7c7fkj 200 56 - 126.404 ms[39m
+[36m[39m
+28-09-2025 23:57:39:5739 [32minfo[39m: [32mProcessing job cmg3vtc570001i0o5tl7c7fkj...[39m
+28-09-2025 23:57:41:5741 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg3vtc570001i0o5tl7c7fkj 200 56 - 8.256 ms[39m
+[36m[39m
+28-09-2025 23:58:39:5839 [32minfo[39m: [32mServer is running on port 3000[39m
+28-09-2025 23:58:39:5839 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+28-09-2025 23:58:41:5841 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg3vtc570001i0o5tl7c7fkj 200 56 - 138.522 ms[39m
+[36m[39m
+29-09-2025 00:00:05:05 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg3vtc570001i0o5tl7c7fkj 200 56 - 10.721 ms[39m
+[36m[39m
+29-09-2025 00:00:08:08 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg3vtc570001i0o5tl7c7fkj 200 56 - 5.784 ms[39m
+[36m[39m
+29-09-2025 00:01:05:15 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg3vtc570001i0o5tl7c7fkj 200 56 - 7.789 ms[39m
+[36m[39m
+29-09-2025 00:01:08:18 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg3vtc570001i0o5tl7c7fkj 200 56 - 5.041 ms[39m
+[36m[39m
+29-09-2025 00:01:09:19 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg3vtc570001i0o5tl7c7fkj 200 56 - 6.025 ms[39m
+[36m[39m
+29-09-2025 00:01:14:114 [36mhttp[39m: [36m::1 POST /api/v1/cv/evaluate 202 52 - 24.451 ms[39m
+[36m[39m
+29-09-2025 00:01:14:114 [32minfo[39m: [32mProcessing job cmg3w00x20001i0dt6b9wniwm...[39m
+29-09-2025 00:01:16:116 [31merror[39m: [31mGemini API Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent: [503 Service Unavailable] The service is currently unavailable.[39m
+29-09-2025 00:01:16:116 [31merror[39m: [31mJob cmg3w00x20001i0dt6b9wniwm failed: Failed to generate response from Gemini.[39m
+29-09-2025 00:01:45:145 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg3vtc570001i0o5tl7c7fkj 200 56 - 6.293 ms[39m
+[36m[39m
+29-09-2025 00:02:25:225 [36mhttp[39m: [36m::1 POST /api/v1/cv/evaluate 202 52 - 16.931 ms[39m
+[36m[39m
+29-09-2025 00:02:25:225 [32minfo[39m: [32mProcessing job cmg3w1j4w0003i0dtgx424a9c...[39m
+29-09-2025 00:03:05:35 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg3w00x20001i0dt6b9wniwm 200 52 - 4.969 ms[39m
+[36m[39m
+29-09-2025 00:03:25:325 [31merror[39m: [31mGemini API Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent: [503 Service Unavailable] The service is currently unavailable.[39m
+29-09-2025 00:03:25:325 [31merror[39m: [31mJob cmg3w1j4w0003i0dtgx424a9c failed: Failed to generate response from Gemini.[39m
+29-09-2025 00:13:30:1330 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 00:13:30:1330 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 00:13:49:1349 [36mhttp[39m: [36m::1 POST /api/v1/cv/evaluate 202 52 - 165.330 ms[39m
+[36m[39m
+29-09-2025 00:13:49:1349 [32minfo[39m: [32mProcessing job cmg3wg7ch0001i0rzp33yjw7m...[39m
+29-09-2025 00:14:34:1434 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 00:14:34:1434 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 00:14:58:1458 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg3wg7ch0001i0rzp33yjw7m 200 56 - 95.160 ms[39m
+[36m[39m
+29-09-2025 00:15:34:1534 [32minfo[39m: [32mProcessing job cmg3wg7ch0001i0rzp33yjw7m...[39m
+29-09-2025 00:17:22:1722 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg3w00x20001i0dt6b9wniwm 200 52 - 9.855 ms[39m
+[36m[39m
+29-09-2025 00:18:10:1810 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg3vtc570001i0o5tl7c7fkj 200 56 - 6.569 ms[39m
+[36m[39m
+29-09-2025 00:18:47:1847 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg3wg7ch0001i0rzp33yjw7m 200 596 - 6.512 ms[39m
+[36m[39m
+29-09-2025 00:23:02:232 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 00:23:02:232 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 00:24:50:2450 [31merror[39m: [31mGet Result Error: cv_match_rate is not defined[39m
+29-09-2025 00:24:50:2450 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg3wg7ch0001i0rzp33yjw7m 500 35 - 149.061 ms[39m
+[36m[39m
+29-09-2025 00:25:22:2522 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 00:25:22:2522 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 00:25:24:2524 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg3wg7ch0001i0rzp33yjw7m 200 596 - 127.026 ms[39m
+[36m[39m
+29-09-2025 00:28:17:2817 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 00:28:17:2817 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 00:28:45:2845 [36mhttp[39m: [36m::1 POST /api/v1/cv/upload 201 842 - 145.534 ms[39m
+[36m[39m
+29-09-2025 00:29:12:2912 [36mhttp[39m: [36m::1 POST /api/v1/cv/evaluate 202 52 - 31.934 ms[39m
+[36m[39m
+29-09-2025 00:29:12:2912 [32minfo[39m: [32mProcessing job cmg3wzzd60004i0ewid9ymy4h...[39m
+29-09-2025 00:29:58:2958 [31merror[39m: [31mGet Result Error: Cannot read properties of null (reading 'cv_match_rate')[39m
+29-09-2025 00:29:58:2958 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg3wzzd60004i0ewid9ymy4h 500 35 - 10.307 ms[39m
+[36m[39m
+29-09-2025 00:31:14:3114 [31merror[39m: [31mGet Result Error: Cannot read properties of null (reading 'cv_match_rate')[39m
+29-09-2025 00:31:14:3114 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg3wzzd60004i0ewid9ymy4h 500 35 - 9.814 ms[39m
+[36m[39m
+29-09-2025 00:32:56:3256 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 00:32:56:3256 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 00:33:04:334 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg3wzzd60004i0ewid9ymy4h 200 371 - 129.048 ms[39m
+[36m[39m
+29-09-2025 00:34:55:3455 [36mhttp[39m: [36m::1 POST /api/v1/cv/upload 201 851 - 46.781 ms[39m
+[36m[39m
+29-09-2025 00:35:19:3519 [36mhttp[39m: [36m::1 POST /api/v1/cv/evaluate 202 52 - 25.682 ms[39m
+[36m[39m
+29-09-2025 00:35:19:3519 [32minfo[39m: [32mProcessing job cmg3x7u7m0004i0suk3kd1gbx...[39m
+29-09-2025 00:35:26:3526 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg3x7u7m0004i0suk3kd1gbx 200 56 - 6.634 ms[39m
+[36m[39m
+29-09-2025 00:36:30:3630 [31merror[39m: [31mGemini API Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent: fetch failed[39m
+29-09-2025 00:36:30:3630 [31merror[39m: [31mJob cmg3x7u7m0004i0suk3kd1gbx failed: Failed to generate response from Gemini.[39m
+29-09-2025 00:36:35:3635 [32minfo[39m: [32mProcessing job cmg3x7u7m0004i0suk3kd1gbx...[39m
+29-09-2025 00:36:36:3636 [31merror[39m: [31mGemini API Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent: [503 Service Unavailable] The service is currently unavailable.[39m
+29-09-2025 00:36:36:3636 [31merror[39m: [31mJob cmg3x7u7m0004i0suk3kd1gbx failed: Failed to generate response from Gemini.[39m
+29-09-2025 00:36:46:3646 [32minfo[39m: [32mProcessing job cmg3x7u7m0004i0suk3kd1gbx...[39m
+29-09-2025 00:37:14:3714 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg3x7u7m0004i0suk3kd1gbx 200 56 - 5.338 ms[39m
+[36m[39m
+29-09-2025 00:37:16:3716 [31merror[39m: [31mGemini API Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent: [503 Service Unavailable] The model is overloaded. Please try again later.[39m
+29-09-2025 00:37:16:3716 [31merror[39m: [31mJob cmg3x7u7m0004i0suk3kd1gbx failed: Failed to generate response from Gemini.[39m
+29-09-2025 00:37:31:3731 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg3x7u7m0004i0suk3kd1gbx 200 52 - 7.429 ms[39m
+[36m[39m
+29-09-2025 00:40:58:4058 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 00:40:58:4058 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 00:41:08:418 [36mhttp[39m: [36m::1 POST /api/v1/cv/evaluate 202 52 - 183.410 ms[39m
+[36m[39m
+29-09-2025 00:41:08:418 [32minfo[39m: [32mProcessing job cmg3xfbv80001i015yuodra2o...[39m
+29-09-2025 00:41:43:4143 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg3xfbv80001i015yuodra2o 200 56 - 11.945 ms[39m
+[36m[39m
+29-09-2025 00:47:08:478 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg3xfbv80001i015yuodra2o 200 354 - 43.426 ms[39m
+[36m[39m
+29-09-2025 00:50:22:5022 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 00:50:22:5022 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 00:50:47:5047 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg3w1j4w0003i0dtgx424a9c 200 113 - 180.910 ms[39m
+[36m[39m
+29-09-2025 10:50:51:5051 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 10:50:51:5051 [31merror[39m: [31mIORedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+29-09-2025 10:50:51:5051 [31merror[39m: [31mIORedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+29-09-2025 10:50:51:5051 [31merror[39m: [31mIORedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+29-09-2025 10:50:51:5051 [31merror[39m: [31mIORedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+29-09-2025 10:50:51:5051 [31merror[39m: [31mIORedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+29-09-2025 10:50:52:5052 [31merror[39m: [31mIORedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+29-09-2025 10:50:52:5052 [31merror[39m: [31mIORedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+29-09-2025 10:50:52:5052 [31merror[39m: [31mIORedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+29-09-2025 10:50:53:5053 [31merror[39m: [31mIORedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+29-09-2025 10:50:53:5053 [31merror[39m: [31mIORedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+29-09-2025 10:50:54:5054 [31merror[39m: [31mIORedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+29-09-2025 10:50:54:5054 [31merror[39m: [31mIORedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+29-09-2025 10:50:55:5055 [31merror[39m: [31mIORedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+29-09-2025 10:50:55:5055 [31merror[39m: [31mIORedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+29-09-2025 10:50:56:5056 [31merror[39m: [31mIORedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+29-09-2025 10:50:57:5057 [31merror[39m: [31mIORedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+29-09-2025 10:50:58:5058 [31merror[39m: [31mIORedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+29-09-2025 10:50:59:5059 [31merror[39m: [31mIORedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+29-09-2025 10:50:59:5059 [31merror[39m: [31mIORedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+29-09-2025 10:51:00:510 [31merror[39m: [31mIORedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+29-09-2025 10:51:01:511 [31merror[39m: [31mIORedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+29-09-2025 10:51:02:512 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 10:51:08:518 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg3w1j4w0003i0dtgx424a9c 200 113 - 189.674 ms[39m
+[36m[39m
+29-09-2025 10:51:25:5125 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg3xfbv80001i015yuodra2o 200 354 - 9.568 ms[39m
+[36m[39m
+29-09-2025 10:51:58:5158 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 10:51:58:5158 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 10:52:01:521 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg3xfbv80001i015yuodra2o 200 354 - 103.418 ms[39m
+[36m[39m
+29-09-2025 10:52:27:5227 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg3w1j4w0003i0dtgx424a9c 200 113 - 7.995 ms[39m
+[36m[39m
+29-09-2025 12:49:49:4949 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 12:49:49:4949 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 12:50:36:5036 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 12:50:36:5036 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 12:52:22:5222 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 12:52:22:5222 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 12:56:10:5610 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 12:56:11:5611 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 12:57:32:5732 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 12:57:32:5732 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 12:58:18:5818 [36mhttp[39m: [36m::1 POST /api/v1/cv/upload 201 851 - 271.988 ms[39m
+[36m[39m
+29-09-2025 12:58:56:5856 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 12:58:56:5856 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 13:06:10:610 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 13:06:10:610 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 13:06:17:617 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 13:06:17:617 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 13:39:09:399 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 13:39:10:3910 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 13:42:40:4240 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 13:42:40:4240 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 13:44:34:4434 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 13:44:34:4434 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 13:47:12:4712 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 13:47:12:4712 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 13:49:07:497 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 13:49:07:497 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 13:50:20:5020 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 13:50:20:5020 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 13:52:36:5236 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 13:52:36:5236 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 13:53:31:5331 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 13:53:31:5331 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 13:54:30:5430 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 13:54:30:5430 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 13:55:31:5531 [36mhttp[39m: [36m::1 POST /api/v1/jobs/upload 400 83 - 29.044 ms[39m
+[36m[39m
+29-09-2025 13:56:12:5612 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 13:56:12:5612 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 13:56:14:5614 [36mhttp[39m: [36m::1 POST /api/v1/jobs/upload 400 83 - 19.200 ms[39m
+[36m[39m
+29-09-2025 13:57:18:5718 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 13:57:18:5718 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 13:57:19:5719 [36mhttp[39m: [36m::1 POST /api/v1/jobs/upload 400 83 - 28.996 ms[39m
+[36m[39m
+29-09-2025 13:58:07:587 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 13:58:07:587 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 13:58:29:5829 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 13:58:29:5829 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 13:59:08:598 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 13:59:08:598 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 13:59:31:5931 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 13:59:31:5931 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 13:59:37:5937 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 13:59:37:5937 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 13:59:38:5938 [36mhttp[39m: [36m::1 POST /api/v1/jobs/upload 400 83 - 45.273 ms[39m
+[36m[39m
+29-09-2025 14:00:22:022 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 14:00:22:022 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 14:00:24:024 [36mhttp[39m: [36m::1 POST /api/v1/jobs/upload 400 83 - 41.359 ms[39m
+[36m[39m
+29-09-2025 14:02:21:221 [36mhttp[39m: [36m::1 POST /api/v1/jobs/upload 400 83 - 16.251 ms[39m
+[36m[39m
+29-09-2025 14:02:47:247 [36mhttp[39m: [36m::1 POST /api/v1/cv/upload 201 851 - 349.565 ms[39m
+[36m[39m
+29-09-2025 14:08:51:851 [36mhttp[39m: [36m::1 POST /api/v1/jobs/upload 400 83 - 18.333 ms[39m
+[36m[39m
+29-09-2025 14:13:35:1335 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 14:13:35:1335 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 14:13:38:1338 [36mhttp[39m: [36m::1 POST /api/v1/jobs/upload 400 83 - 18.010 ms[39m
+[36m[39m
+29-09-2025 14:13:43:1343 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 14:13:43:1343 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 14:13:45:1345 [36mhttp[39m: [36m::1 POST /api/v1/jobs/upload 400 83 - 18.208 ms[39m
+[36m[39m
+29-09-2025 14:14:05:145 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 14:14:05:145 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 14:14:19:1419 [36mhttp[39m: [36m::1 POST /api/v1/cv/upload 201 851 - 172.048 ms[39m
+[36m[39m
+29-09-2025 14:14:44:1444 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 14:14:44:1444 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 14:14:51:1451 [36mhttp[39m: [36m::1 POST /api/v1/jobs/upload 400 83 - 23.759 ms[39m
+[36m[39m
+29-09-2025 14:18:08:188 [31merror[39m: [31mCreate Job Posting Error: Cannot read properties of undefined (reading 'originalname')[39m
+29-09-2025 14:18:08:188 [36mhttp[39m: [36m::1 POST /api/v1/jobs/upload 500 35 - 15.872 ms[39m
+[36m[39m
+29-09-2025 14:18:36:1836 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 14:18:36:1836 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 14:18:40:1840 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 14:18:40:1840 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 14:21:09:219 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 14:21:09:219 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 14:21:28:2128 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 14:21:28:2128 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 14:21:31:2131 [31merror[39m: [31mCreate Job Posting Error: Cannot read properties of undefined (reading 'originalname')[39m
+29-09-2025 14:21:31:2131 [36mhttp[39m: [36m::1 POST /api/v1/jobs/upload 500 35 - 23.482 ms[39m
+[36m[39m
+29-09-2025 14:21:46:2146 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 14:21:46:2146 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 14:21:49:2149 [31merror[39m: [31mCreate Job Posting Error: Cannot read properties of undefined (reading 'originalname')[39m
+29-09-2025 14:21:49:2149 [36mhttp[39m: [36m::1 POST /api/v1/jobs/upload 500 35 - 20.682 ms[39m
+[36m[39m
+29-09-2025 14:22:22:2222 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 14:22:22:2222 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 14:22:24:2224 [31merror[39m: [31mCreate Job Posting Error: Cannot read properties of undefined (reading 'originalname')[39m
+29-09-2025 14:22:24:2224 [36mhttp[39m: [36m::1 POST /api/v1/jobs/upload 500 35 - 27.712 ms[39m
+[36m[39m
+29-09-2025 14:22:36:2236 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 14:22:36:2236 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 14:23:30:2330 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 14:23:30:2330 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 14:23:35:2335 [31merror[39m: [31mCreate Job Posting Error: [39m
+[31mInvalid `prisma.vectorEmbedding.create()` invocation:[39m
+
+
+[31mOperation 'createOne' for model 'VectorEmbedding' does not match any query.[39m
+29-09-2025 14:23:35:2335 [36mhttp[39m: [36m::1 POST /api/v1/jobs/upload 500 35 - 1374.876 ms[39m
+[36m[39m
+29-09-2025 14:31:46:3146 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 14:31:46:3146 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 14:31:50:3150 [31merror[39m: [31mCreate Job Posting Error: pgvector is not defined[39m
+29-09-2025 14:31:50:3150 [36mhttp[39m: [36m::1 POST /api/v1/jobs/upload 500 35 - 943.444 ms[39m
+[36m[39m
+29-09-2025 14:32:04:324 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 14:32:04:324 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 14:32:14:3214 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 14:32:14:3214 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 14:32:18:3218 [31merror[39m: [31mCreate Job Posting Error: [39m
+[31mInvalid `prisma.$executeRawUnsafe()` invocation:[39m
+
+
+[31mRaw query failed. Code: `23502`. Message: `Failing row contains (null, You'll be building new product features alongside a frontend eng..., [-0.0046263565,0.0036607666,0.0037804279,-0.08218382,-0.00037249..., {"type": "job_description", "jobTitle": "Product Engineer (Backe..., 2025-09-29 06:32:18.187).`[39m
+29-09-2025 14:32:18:3218 [36mhttp[39m: [36m::1 POST /api/v1/jobs/upload 500 35 - 900.952 ms[39m
+[36m[39m
+29-09-2025 14:32:48:3248 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 14:32:48:3248 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 14:33:12:3312 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 14:33:12:3312 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 14:33:36:3336 [31merror[39m: [31mCreate Job Posting Error: savedEmbedding is not defined[39m
+29-09-2025 14:33:36:3336 [36mhttp[39m: [36m::1 POST /api/v1/jobs/upload 500 35 - 1407.115 ms[39m
+[36m[39m
+29-09-2025 14:34:54:3454 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 14:34:54:3454 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 14:35:01:351 [31merror[39m: [31mCreate Job Posting Error: [39m
+[31mInvalid `prisma.jobPosting.create()` invocation:[39m
+
+[31m{[39m
+[31m  data: {[39m
+[31m    id: "product-engineer-backend-2025-eaufxoc1",[39m
+[31m    title: "Product Engineer (Backend) 2025",[39m
+[31m    studyCaseBriefFileId: undefined,[39m
+[31m    descriptionEmbeddingId: undefined,[39m
+[31m+   studyCaseBriefFile: {[39m
+[31m+     create: UploadedFileCreateWithoutJobPostingsAsBriefInput | UploadedFileUncheckedCreateWithoutJobPostingsAsBriefInput,[39m
+[31m+     connectOrCreate: UploadedFileCreateOrConnectWithoutJobPostingsAsBriefInput,[39m
+[31m+     connect: UploadedFileWhereUniqueInput[39m
+[31m+   }[39m
+[31m  }[39m
+[31m}[39m
+
+[31mArgument `studyCaseBriefFile` is missing.[39m
+29-09-2025 14:35:01:351 [36mhttp[39m: [36m::1 POST /api/v1/jobs/upload 500 35 - 1321.234 ms[39m
+[36m[39m
+29-09-2025 14:35:50:3550 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 14:35:50:3550 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 14:35:54:3554 [31merror[39m: [31mCreate Job Posting Error: [39m
+[31mInvalid `prisma.jobPosting.create()` invocation:[39m
+
+[31m{[39m
+[31m  data: {[39m
+[31m    id: "product-engineer-backend-2025-qptig8in",[39m
+[31m    title: "Product Engineer (Backend) 2025",[39m
+[31m    studyCaseBriefFileId: undefined,[39m
+[31m    descriptionEmbeddingId: undefined,[39m
+[31m+   studyCaseBriefFile: {[39m
+[31m+     create: UploadedFileCreateWithoutJobPostingsAsBriefInput | UploadedFileUncheckedCreateWithoutJobPostingsAsBriefInput,[39m
+[31m+     connectOrCreate: UploadedFileCreateOrConnectWithoutJobPostingsAsBriefInput,[39m
+[31m+     connect: UploadedFileWhereUniqueInput[39m
+[31m+   }[39m
+[31m  }[39m
+[31m}[39m
+
+[31mArgument `studyCaseBriefFile` is missing.[39m
+29-09-2025 14:35:54:3554 [36mhttp[39m: [36m::1 POST /api/v1/jobs/upload 500 35 - 1832.051 ms[39m
+[36m[39m
+29-09-2025 14:37:38:3738 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 14:37:38:3738 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 14:37:43:3743 [31merror[39m: [31mCreate Job Posting Error: [39m
+[31mInvalid `prisma.jobPosting.create()` invocation:[39m
+
+[31m{[39m
+[31m  data: {[39m
+[31m    id: "product-engineer-backend-2025-zu6r0zby",[39m
+[31m    title: "Product Engineer (Backend) 2025",[39m
+[31m    studyCaseBriefFileId: undefined,[39m
+[31m    descriptionEmbeddingId: "l65pseap2gvwkluqfi2wveto",[39m
+[31m+   studyCaseBriefFile: {[39m
+[31m+     create: UploadedFileCreateWithoutJobPostingsAsBriefInput | UploadedFileUncheckedCreateWithoutJobPostingsAsBriefInput,[39m
+[31m+     connectOrCreate: UploadedFileCreateOrConnectWithoutJobPostingsAsBriefInput,[39m
+[31m+     connect: UploadedFileWhereUniqueInput[39m
+[31m+   }[39m
+[31m  }[39m
+[31m}[39m
+
+[31mArgument `studyCaseBriefFile` is missing.[39m
+29-09-2025 14:37:43:3743 [36mhttp[39m: [36m::1 POST /api/v1/jobs/upload 500 35 - 1286.736 ms[39m
+[36m[39m
+29-09-2025 14:38:37:3837 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 14:38:37:3837 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 14:38:43:3843 [36mhttp[39m: [36m::1 POST /api/v1/jobs/upload 201 96 - 1139.909 ms[39m
+[36m[39m
+29-09-2025 14:39:32:3932 [36mhttp[39m: [36m::1 POST /api/v1/jobs/upload 201 96 - 882.835 ms[39m
+[36m[39m
+29-09-2025 14:41:21:4121 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 14:41:21:4121 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 14:43:46:4346 [31merror[39m: [31mEvaluation Request Error: [39m
+[31mInvalid `prisma.evaluationJob.create()` invocation:[39m
+
+[31m{[39m
+[31m  data: {[39m
+[31m    jobPostingId: "product-engineer-backend-2025-kjeolo6d",[39m
+[31m    cvFileId: "cmg4nrbnn0000i09j0z3hkxbn",[39m
+[31m    projectReportFileId: "cmg4qh39p0001i07kyiwcztco",[39m
+[31m    status: "QUEUED",[39m
+[31m+   jobDescription: String[39m
+[31m  }[39m
+[31m}[39m
+
+[31mArgument `jobDescription` is missing.[39m
+29-09-2025 14:43:46:4346 [36mhttp[39m: [36m::1 POST /api/v1/cv/evaluate 500 35 - 149.181 ms[39m
+[36m[39m
+29-09-2025 15:25:11:2511 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 15:25:11:2511 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 15:25:13:2513 [31merror[39m: [31mEvaluation Request Error: newJob is not defined[39m
+29-09-2025 15:25:13:2513 [36mhttp[39m: [36m::1 POST /api/v1/cv/evaluate 500 35 - 146.424 ms[39m
+[36m[39m
+29-09-2025 15:25:13:2513 [32minfo[39m: [32mProcessing job cmg4t09rp0001i0fzb40old4a...[39m
+29-09-2025 15:25:13:2513 [31merror[39m: [31mError reading file uploads/Software Engineer_Kholil Haq Alim Hakim-7afd6f42.pdf: ENOENT: no such file or directory, open 'uploads/Software Engineer_Kholil Haq Alim Hakim-7afd6f42.pdf'[39m
+29-09-2025 15:25:13:2513 [31merror[39m: [31mJob cmg4t09rp0001i0fzb40old4a failed: Could not read or parse file: Software Engineer_Kholil Haq Alim Hakim-7afd6f42.pdf[39m
+29-09-2025 15:25:18:2518 [32minfo[39m: [32mProcessing job cmg4t09rp0001i0fzb40old4a...[39m
+29-09-2025 15:25:18:2518 [31merror[39m: [31mError reading file uploads/Software Engineer_Kholil Haq Alim Hakim-7afd6f42.pdf: ENOENT: no such file or directory, open 'uploads/Software Engineer_Kholil Haq Alim Hakim-7afd6f42.pdf'[39m
+29-09-2025 15:25:18:2518 [31merror[39m: [31mJob cmg4t09rp0001i0fzb40old4a failed: Could not read or parse file: Software Engineer_Kholil Haq Alim Hakim-7afd6f42.pdf[39m
+29-09-2025 15:25:28:2528 [32minfo[39m: [32mProcessing job cmg4t09rp0001i0fzb40old4a...[39m
+29-09-2025 15:25:29:2529 [31merror[39m: [31mError reading file uploads/Software Engineer_Kholil Haq Alim Hakim-7afd6f42.pdf: ENOENT: no such file or directory, open 'uploads/Software Engineer_Kholil Haq Alim Hakim-7afd6f42.pdf'[39m
+29-09-2025 15:25:29:2529 [31merror[39m: [31mJob cmg4t09rp0001i0fzb40old4a failed: Could not read or parse file: Software Engineer_Kholil Haq Alim Hakim-7afd6f42.pdf[39m
+29-09-2025 15:27:58:2758 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 15:27:58:2758 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 15:28:03:283 [36mhttp[39m: [36m::1 POST /api/v1/cv/upload 201 601 - 157.950 ms[39m
+[36m[39m
+29-09-2025 15:28:19:2819 [36mhttp[39m: [36m::1 POST /api/v1/jobs/upload 201 96 - 692.855 ms[39m
+[36m[39m
+29-09-2025 15:28:46:2846 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg3w1j4w0003i0dtgx424a9 404 39 - 12.429 ms[39m
+[36m[39m
+29-09-2025 15:29:05:295 [31merror[39m: [31mEvaluation Request Error: newJob is not defined[39m
+29-09-2025 15:29:05:295 [36mhttp[39m: [36m::1 POST /api/v1/cv/evaluate 500 35 - 24.651 ms[39m
+[36m[39m
+29-09-2025 15:29:05:295 [32minfo[39m: [32mProcessing job cmg4t58mc0004i0ax17l570f0...[39m
+29-09-2025 15:29:06:296 [31merror[39m: [31mJob cmg4t58mc0004i0ax17l570f0 failed: Cannot read properties of undefined (reading 'storagePath')[39m
+29-09-2025 15:29:11:2911 [32minfo[39m: [32mProcessing job cmg4t58mc0004i0ax17l570f0...[39m
+29-09-2025 15:29:11:2911 [31merror[39m: [31mJob cmg4t58mc0004i0ax17l570f0 failed: Cannot read properties of undefined (reading 'storagePath')[39m
+29-09-2025 15:29:21:2921 [32minfo[39m: [32mProcessing job cmg4t58mc0004i0ax17l570f0...[39m
+29-09-2025 15:29:21:2921 [31merror[39m: [31mJob cmg4t58mc0004i0ax17l570f0 failed: Cannot read properties of undefined (reading 'storagePath')[39m
+29-09-2025 15:32:16:3216 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 15:32:16:3216 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 15:32:18:3218 [31merror[39m: [31mEvaluation Request Error: newJob is not defined[39m
+29-09-2025 15:32:18:3218 [36mhttp[39m: [36m::1 POST /api/v1/cv/evaluate 500 35 - 141.801 ms[39m
+[36m[39m
+29-09-2025 15:32:18:3218 [32minfo[39m: [32mProcessing job cmg4t9d8e0001i0ls8301dyuu...[39m
+29-09-2025 15:32:18:3218 [31merror[39m: [31mJob cmg4t9d8e0001i0ls8301dyuu failed: Cannot read properties of undefined (reading 'storagePath')[39m
+29-09-2025 15:32:23:3223 [32minfo[39m: [32mProcessing job cmg4t9d8e0001i0ls8301dyuu...[39m
+29-09-2025 15:32:23:3223 [31merror[39m: [31mJob cmg4t9d8e0001i0ls8301dyuu failed: Cannot read properties of undefined (reading 'storagePath')[39m
+29-09-2025 15:32:34:3234 [32minfo[39m: [32mProcessing job cmg4t9d8e0001i0ls8301dyuu...[39m
+29-09-2025 15:32:34:3234 [31merror[39m: [31mJob cmg4t9d8e0001i0ls8301dyuu failed: Cannot read properties of undefined (reading 'storagePath')[39m
+29-09-2025 15:33:21:3321 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 15:33:21:3321 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 15:33:29:3329 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 15:33:29:3329 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 15:33:32:3332 [31merror[39m: [31mEvaluation Request Error: newJob is not defined[39m
+29-09-2025 15:33:32:3332 [36mhttp[39m: [36m::1 POST /api/v1/cv/evaluate 500 35 - 147.881 ms[39m
+[36m[39m
+29-09-2025 15:33:32:3332 [32minfo[39m: [32mProcessing job cmg4tayd50001i0d5jv2ovefo...[39m
+29-09-2025 15:34:22:3422 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 15:34:22:3422 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 15:34:27:3427 [36mhttp[39m: [36m::1 POST /api/v1/cv/evaluate 202 52 - 146.592 ms[39m
+[36m[39m
+29-09-2025 15:34:27:3427 [32minfo[39m: [32mProcessing job cmg4tc4v00001i0wud631el86...[39m
+29-09-2025 15:34:48:3448 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg4tc4v00001i0wud631el86 200 56 - 11.430 ms[39m
+[36m[39m
+29-09-2025 15:36:27:3627 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg4tc4v00001i0wud631el86 200 56 - 7.641 ms[39m
+[36m[39m
+29-09-2025 15:36:33:3633 [32minfo[39m: [32mProcessing job cmg4tayd50001i0d5jv2ovefo...[39m
+29-09-2025 15:36:38:3638 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg4tc4v00001i0wud631el86 200 364 - 6.628 ms[39m
+[36m[39m
+29-09-2025 15:37:49:3749 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 15:37:49:3749 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 15:37:54:3754 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg4tc4v00001i0wud631el86 200 364 - 100.101 ms[39m
+[36m[39m
+29-09-2025 15:41:09:419 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 15:41:09:419 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 15:41:49:4149 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 15:41:49:4149 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 15:42:59:4259 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 15:42:59:4259 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 15:43:38:4338 [36mhttp[39m: [36m::1 GET /api/v1/jobs/product-engineer-backend-2025-aboyxc12 200 556 - 142.086 ms[39m
+[36m[39m
+29-09-2025 15:46:12:4612 [36mhttp[39m: [36m::1 GET /api/v1/jobs/product-engineer-backend-2025-aboyxc12 200 556 - 22.057 ms[39m
+[36m[39m
+29-09-2025 15:46:15:4615 [36mhttp[39m: [36m::1 GET /api/v1/jobs/product-engineer-backend-2025-aboyxc12 200 556 - 6.701 ms[39m
+[36m[39m
+29-09-2025 15:46:26:4626 [36mhttp[39m: [36m::1 GET /api/v1/jobs/product-engineer-backend-2025-aboyxc12 200 556 - 7.879 ms[39m
+[36m[39m
+29-09-2025 15:50:04:504 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 15:50:04:504 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 15:50:13:5013 [36mhttp[39m: [36m::1 POST /api/v1/cv/evaluate 202 52 - 136.249 ms[39m
+[36m[39m
+29-09-2025 15:50:13:5013 [32minfo[39m: [32mProcessing job cmg4twesv0001i0732gh072co...[39m
+29-09-2025 15:52:45:5245 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg4twesv0001i0732gh072co 200 370 - 14.802 ms[39m
+[36m[39m
+29-09-2025 16:29:04:294 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg4twesv0001i0732gh072co 200 370 - 188.860 ms[39m
+[36m[39m
+29-09-2025 17:31:43:3143 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 17:31:43:3143 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 17:35:42:3542 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 17:35:42:3542 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 17:36:38:3638 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 17:36:38:3638 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 17:43:47:4347 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 17:43:47:4347 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 17:44:29:4429 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 17:44:29:4429 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 17:46:10:4610 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 17:46:10:4610 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 17:47:10:4710 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 17:47:10:4710 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 17:58:49:5849 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 17:58:49:5849 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 18:01:14:114 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 18:01:14:114 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 18:02:44:244 [36mhttp[39m: [36m::1 GET /api/v1/rubrics/template 200 2 - 8.273 ms[39m
+[36m[39m
+29-09-2025 18:03:39:339 [36mhttp[39m: [36m::1 GET /api/v1/rubrics/template 200 2 - 1.024 ms[39m
+[36m[39m
+29-09-2025 18:04:23:423 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 18:04:23:423 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 18:04:25:425 [36mhttp[39m: [36m::1 GET /api/v1/rubrics/template 200 2 - 6.255 ms[39m
+[36m[39m
+29-09-2025 18:04:44:444 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 18:04:44:444 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 18:04:59:459 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 18:04:59:459 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 18:05:01:51 [36mhttp[39m: [36m::1 GET /api/v1/rubrics/template 200 2 - 8.207 ms[39m
+[36m[39m
+29-09-2025 18:05:14:514 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 18:05:14:514 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 18:05:17:517 [36mhttp[39m: [36m::1 GET /api/v1/rubrics/template 200 1870 - 7.509 ms[39m
+[36m[39m
+29-09-2025 18:05:26:526 [36mhttp[39m: [36m::1 GET /api/v1/rubrics/template 200 1870 - 2.082 ms[39m
+[36m[39m
+29-09-2025 18:24:54:2454 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 18:24:54:2454 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 18:27:37:2737 [31merror[39m: [31mRubric Upload Error: [39m
+[31mInvalid `prisma.$executeRawUnsafe()` invocation:[39m
+
+
+[31mTransaction API error: Transaction already closed: A query cannot be executed on an expired transaction. The timeout for this transaction was 5000 ms, however 5076 ms passed since the start of the transaction. Consider increasing the interactive transaction timeout or doing less work in the transaction.[39m
+29-09-2025 18:27:37:2737 [36mhttp[39m: [36m::1 POST /api/v1/rubrics/upload 500 374 - 5218.767 ms[39m
+[36m[39m
+29-09-2025 18:31:05:315 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 18:31:05:315 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 18:31:29:3129 [36mhttp[39m: [36m::1 POST /api/v1/rubrics/upload 201 54 - 6123.005 ms[39m
+[36m[39m
+29-09-2025 18:32:52:3252 [36mhttp[39m: [36m::1 POST /api/v1/jobs/upload 201 96 - 584.118 ms[39m
+[36m[39m
+29-09-2025 18:33:00:330 [36mhttp[39m: [36m::1 POST /api/v1/cv/upload 201 601 - 40.181 ms[39m
+[36m[39m
+29-09-2025 18:33:52:3352 [36mhttp[39m: [36m::1 POST /api/v1/cv/evaluate 202 52 - 17.078 ms[39m
+[36m[39m
+29-09-2025 18:33:52:3352 [32minfo[39m: [32mProcessing job cmg4zqvow0004i0b1qtn0mzep...[39m
+29-09-2025 18:34:01:341 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg4zqvow0004i0b1qtn0mzep 200 56 - 5.354 ms[39m
+[36m[39m
+29-09-2025 18:34:18:3418 [31merror[39m: [31mJob cmg4zqvow0004i0b1qtn0mzep failed: Could not retrieve CV evaluation rubrics from the database.[39m
+29-09-2025 18:34:23:3423 [32minfo[39m: [32mProcessing job cmg4zqvow0004i0b1qtn0mzep...[39m
+29-09-2025 18:34:33:3433 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg4zqvow0004i0b1qtn0mzep 200 56 - 7.438 ms[39m
+[36m[39m
+29-09-2025 18:34:36:3436 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg4zqvow0004i0b1qtn0mzep 200 56 - 5.249 ms[39m
+[36m[39m
+29-09-2025 18:34:49:3449 [31merror[39m: [31mJob cmg4zqvow0004i0b1qtn0mzep failed: Could not retrieve CV evaluation rubrics from the database.[39m
+29-09-2025 18:35:00:350 [32minfo[39m: [32mProcessing job cmg4zqvow0004i0b1qtn0mzep...[39m
+29-09-2025 18:35:08:358 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg4zqvow0004i0b1qtn0mzep 200 56 - 4.879 ms[39m
+[36m[39m
+29-09-2025 18:35:25:3525 [31merror[39m: [31mJob cmg4zqvow0004i0b1qtn0mzep failed: Could not retrieve CV evaluation rubrics from the database.[39m
+29-09-2025 18:36:35:3635 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 18:36:35:3635 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 18:36:44:3644 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg4zqvow0004i0b1qtn0mzep 200 113 - 206.479 ms[39m
+[36m[39m
+29-09-2025 18:38:43:3843 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg4zqvow0004i0b1qtn0mzep 200 113 - 18.146 ms[39m
+[36m[39m
+29-09-2025 18:38:46:3846 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg4zqvow0004i0b1qtn0mzep 200 113 - 8.454 ms[39m
+[36m[39m
+29-09-2025 18:38:48:3848 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg4zqvow0004i0b1qtn0mzep 200 113 - 8.667 ms[39m
+[36m[39m
+29-09-2025 18:38:56:3856 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 18:38:56:3856 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 18:38:59:3859 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg4zqvow0004i0b1qtn0mzep 200 113 - 200.969 ms[39m
+[36m[39m
+29-09-2025 18:40:05:405 [36mhttp[39m: [36m::1 POST /api/v1/rubrics/upload 201 54 - 6265.784 ms[39m
+[36m[39m
+29-09-2025 18:40:37:4037 [36mhttp[39m: [36m::1 POST /api/v1/cv/evaluate 202 52 - 32.718 ms[39m
+[36m[39m
+29-09-2025 18:40:37:4037 [32minfo[39m: [32mProcessing job cmg4zzjit0001i0hshsha9fh4...[39m
+29-09-2025 18:41:08:418 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg4zzjit0001i0hshsha9fh4 200 56 - 7.194 ms[39m
+[36m[39m
+29-09-2025 18:41:39:4139 [31merror[39m: [31mJob cmg4zzjit0001i0hshsha9fh4 failed: Could not retrieve Project evaluation rubrics from the database.[39m
+29-09-2025 18:41:44:4144 [32minfo[39m: [32mProcessing job cmg4zzjit0001i0hshsha9fh4...[39m
+29-09-2025 18:42:29:4229 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg4zzjit0001i0hshsha9fh4 200 56 - 11.760 ms[39m
+[36m[39m
+29-09-2025 18:42:31:4231 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg4zzjit0001i0hshsha9fh4 200 56 - 8.174 ms[39m
+[36m[39m
+29-09-2025 18:42:48:4248 [31merror[39m: [31mJob cmg4zzjit0001i0hshsha9fh4 failed: Could not retrieve Project evaluation rubrics from the database.[39m
+29-09-2025 18:42:58:4258 [32minfo[39m: [32mProcessing job cmg4zzjit0001i0hshsha9fh4...[39m
+29-09-2025 18:44:02:442 [31merror[39m: [31mJob cmg4zzjit0001i0hshsha9fh4 failed: Could not retrieve Project evaluation rubrics from the database.[39m
+29-09-2025 18:44:04:444 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg4zzjit0001i0hshsha9fh4 200 113 - 9.867 ms[39m
+[36m[39m
+29-09-2025 18:47:59:4759 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 18:47:59:4759 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 18:49:11:4911 [36mhttp[39m: [36m::1 GET /api/v1/rubrics/template 200 1875 - 14.747 ms[39m
+[36m[39m
+29-09-2025 18:49:42:4942 [36mhttp[39m: [36m::1 GET /api/v1/rubrics/template 200 1875 - 7.157 ms[39m
+[36m[39m
+29-09-2025 18:50:47:5047 [31merror[39m: [31mGemini Embedding Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:embedContent: [503 Service Unavailable] The service is currently unavailable.[39m
+29-09-2025 18:50:48:5048 [31merror[39m: [31mRubric Upload Error: Failed to create embedding.[39m
+29-09-2025 18:50:48:5048 [36mhttp[39m: [36m::1 POST /api/v1/rubrics/upload 500 41 - 3185.857 ms[39m
+[36m[39m
+29-09-2025 18:51:34:5134 [36mhttp[39m: [36m::1 POST /api/v1/rubrics/upload 201 54 - 4125.774 ms[39m
+[36m[39m
+29-09-2025 18:52:10:5210 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 18:52:10:5210 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 18:52:27:5227 [36mhttp[39m: [36m::1 POST /api/v1/cv/evaluate 202 52 - 199.475 ms[39m
+[36m[39m
+29-09-2025 18:52:27:5227 [32minfo[39m: [32mProcessing job cmg50erx70001i0kne4a41oh4...[39m
+29-09-2025 18:52:47:5247 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg50erx70001i0kne4a41oh4 200 56 - 16.031 ms[39m
+[36m[39m
+29-09-2025 18:55:39:5539 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg50erx70001i0kne4a41oh4 200 381 - 11.717 ms[39m
+[36m[39m
+29-09-2025 18:58:08:588 [36mhttp[39m: [36m::1 POST /api/v1/rubrics/upload 201 54 - 6423.887 ms[39m
+[36m[39m
+29-09-2025 18:58:38:5838 [36mhttp[39m: [36m::1 POST /api/v1/cv/evaluate 202 52 - 33.000 ms[39m
+[36m[39m
+29-09-2025 18:58:38:5838 [32minfo[39m: [32mProcessing job cmg50mpz80003i0knxns2w7sn...[39m
+29-09-2025 18:58:50:5850 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg50mpz80003i0knxns2w7sn 200 56 - 8.619 ms[39m
+[36m[39m
+29-09-2025 19:00:34:034 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg50mpz80003i0knxns2w7sn 200 347 - 6.748 ms[39m
+[36m[39m
+29-09-2025 22:16:27:1627 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 22:16:27:1627 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 22:17:06:176 [36mhttp[39m: [36m::1 POST /api/v1/auth/refresh-token 400 42 - 4.416 ms[39m
+[36m[39m
+29-09-2025 22:17:29:1729 [31merror[39m: [31mLogin Error: secretOrPrivateKey must have a value[39m
+29-09-2025 22:17:29:1729 [36mhttp[39m: [36m::1 POST /api/v1/auth/login 401 50 - 160.463 ms[39m
+[36m[39m
+29-09-2025 22:18:42:1842 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 22:18:42:1842 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 22:19:13:1913 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 22:19:13:1913 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 22:19:34:1934 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 22:19:34:1934 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 22:19:45:1945 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 22:19:45:1945 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 22:20:03:203 [31merror[39m: [31mLogin Error: secretOrPrivateKey must have a value[39m
+29-09-2025 22:20:03:203 [36mhttp[39m: [36m::1 POST /api/v1/auth/login 401 50 - 235.806 ms[39m
+[36m[39m
+29-09-2025 22:26:42:2642 [31merror[39m: [31mLogin Error: secretOrPrivateKey must have a value[39m
+29-09-2025 22:26:42:2642 [36mhttp[39m: [36m::1 POST /api/v1/auth/login 401 50 - 85.085 ms[39m
+[36m[39m
+29-09-2025 22:26:44:2644 [31merror[39m: [31mLogin Error: secretOrPrivateKey must have a value[39m
+29-09-2025 22:26:44:2644 [36mhttp[39m: [36m::1 POST /api/v1/auth/login 401 50 - 62.847 ms[39m
+[36m[39m
+29-09-2025 22:26:46:2646 [31merror[39m: [31mLogin Error: secretOrPrivateKey must have a value[39m
+29-09-2025 22:26:46:2646 [36mhttp[39m: [36m::1 POST /api/v1/auth/login 401 50 - 63.710 ms[39m
+[36m[39m
+29-09-2025 22:27:25:2725 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 22:27:25:2725 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 22:28:07:287 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 22:28:07:287 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 22:28:12:2812 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 22:28:12:2812 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 22:28:58:2858 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 22:28:58:2858 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 22:29:09:299 [36mhttp[39m: [36m::1 POST /api/v1/auth/login 200 410 - 248.137 ms[39m
+[36m[39m
+29-09-2025 22:29:55:2955 [36mhttp[39m: [36m::1 POST /api/v1/auth/register 401 44 - 1.523 ms[39m
+[36m[39m
+29-09-2025 22:31:04:314 [36mhttp[39m: [36m::1 POST /api/v1/auth/register 201 200 - 116.377 ms[39m
+[36m[39m
+29-09-2025 22:31:23:3123 [36mhttp[39m: [36m::1 POST /api/v1/auth/refresh-token 400 42 - 4.665 ms[39m
+[36m[39m
+29-09-2025 22:34:07:347 [36mhttp[39m: [36m::1 POST /api/v1/auth/login 200 416 - 78.924 ms[39m
+[36m[39m
+29-09-2025 22:34:55:3455 [36mhttp[39m: [36m::1 POST /api/v1/auth/refresh-token 200 221 - 45.126 ms[39m
+[36m[39m
+29-09-2025 22:36:14:3614 [36mhttp[39m: [36m::1 POST /api/v1/auth/register 401 39 - 1.982 ms[39m
+[36m[39m
+29-09-2025 22:36:31:3631 [36mhttp[39m: [36m::1 POST /api/v1/auth/register 403 37 - 1.575 ms[39m
+[36m[39m
+29-09-2025 22:37:00:370 [36mhttp[39m: [36m::1 POST /api/v1/auth/register 401 39 - 2.636 ms[39m
+[36m[39m
+29-09-2025 22:37:22:3722 [31merror[39m: [31mRefresh Token Error: invalid signature[39m
+29-09-2025 22:37:22:3722 [36mhttp[39m: [36m::1 POST /api/v1/auth/refresh-token 401 31 - 7.204 ms[39m
+[36m[39m
+29-09-2025 22:37:54:3754 [31merror[39m: [31mLogin Error: Invalid credentials[39m
+29-09-2025 22:37:54:3754 [36mhttp[39m: [36m::1 POST /api/v1/auth/login 401 33 - 11.674 ms[39m
+[36m[39m
+29-09-2025 22:38:07:387 [36mhttp[39m: [36m::1 POST /api/v1/auth/login 200 416 - 105.618 ms[39m
+[36m[39m
+29-09-2025 22:38:18:3818 [31merror[39m: [31mLogin Error: Invalid credentials[39m
+29-09-2025 22:38:18:3818 [36mhttp[39m: [36m::1 POST /api/v1/auth/login 401 33 - 8.554 ms[39m
+[36m[39m
+29-09-2025 22:38:32:3832 [36mhttp[39m: [36m::1 POST /api/v1/auth/login 200 410 - 109.298 ms[39m
+[36m[39m
+29-09-2025 22:39:34:3934 [36mhttp[39m: [36m::1 POST /api/v1/cv/upload 400 69 - 1.977 ms[39m
+[36m[39m
+29-09-2025 22:40:10:4010 [36mhttp[39m: [36m::1 POST /api/v1/cv/upload 201 601 - 69.224 ms[39m
+[36m[39m
+29-09-2025 22:42:36:4236 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 22:42:36:4236 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 22:42:56:4256 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 22:42:56:4256 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 22:43:02:432 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 22:43:02:432 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 22:43:31:4331 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 22:43:31:4331 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 22:43:48:4348 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 22:43:49:4349 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 22:44:12:4412 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 22:44:12:4412 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 22:44:36:4436 [32minfo[39m: [32mServer is running on port 3000[39m
+29-09-2025 22:44:36:4436 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+29-09-2025 22:44:39:4439 [36mhttp[39m: [36m::1 POST /api/v1/cv/upload 401 44 - 3.797 ms[39m
+[36m[39m
+29-09-2025 22:45:29:4529 [36mhttp[39m: [36m::1 POST /api/v1/auth/login 200 416 - 214.541 ms[39m
+[36m[39m
+29-09-2025 22:46:24:4624 [36mhttp[39m: [36m::1 POST /api/v1/auth/login 200 410 - 115.165 ms[39m
+[36m[39m
+29-09-2025 22:46:37:4637 [36mhttp[39m: [36m::1 POST /api/v1/auth/login 200 410 - 81.978 ms[39m
+[36m[39m
+29-09-2025 22:47:10:4710 [36mhttp[39m: [36m::1 POST /api/v1/auth/login 200 410 - 80.985 ms[39m
+[36m[39m
+29-09-2025 22:47:25:4725 [36mhttp[39m: [36m::1 POST /api/v1/auth/login 200 410 - 79.152 ms[39m
+[36m[39m
+29-09-2025 22:47:43:4743 [36mhttp[39m: [36m::1 POST /api/v1/auth/login 200 416 - 81.666 ms[39m
+[36m[39m
+29-09-2025 22:47:49:4749 [36mhttp[39m: [36m::1 POST /api/v1/cv/upload 401 44 - 1.015 ms[39m
+[36m[39m
+29-09-2025 22:48:00:480 [36mhttp[39m: [36m::1 POST /api/v1/cv/upload 400 69 - 6.641 ms[39m
+[36m[39m
+29-09-2025 22:48:22:4822 [36mhttp[39m: [36m::1 POST /api/v1/cv/upload 201 601 - 39.587 ms[39m
+[36m[39m
+29-09-2025 22:49:07:497 [36mhttp[39m: [36m::1 POST /api/v1/cv/evaluate 401 44 - 0.493 ms[39m
+[36m[39m
+29-09-2025 22:49:30:4930 [36mhttp[39m: [36m::1 POST /api/v1/cv/evaluate 202 52 - 25.761 ms[39m
+[36m[39m
+29-09-2025 22:49:30:4930 [32minfo[39m: [32mProcessing job cmg58vma20003i0kncy5cu7m8...[39m
+29-09-2025 22:49:43:4943 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg58vma20003i0kncy5cu7m8 401 44 - 1.757 ms[39m
+[36m[39m
+29-09-2025 22:49:59:4959 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg58vma20003i0kncy5cu7m8 200 56 - 9.022 ms[39m
+[36m[39m
+29-09-2025 22:50:28:5028 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg58vma20003i0kncy5cu7m8 200 56 - 9.041 ms[39m
+[36m[39m
+29-09-2025 22:51:40:5140 [31merror[39m: [31mGemini API Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent: [503 Service Unavailable] The model is overloaded. Please try again later.[39m
+29-09-2025 22:51:40:5140 [31merror[39m: [31mJob cmg58vma20003i0kncy5cu7m8 failed: Failed to generate response from Gemini.[39m
+29-09-2025 22:51:45:5145 [32minfo[39m: [32mProcessing job cmg58vma20003i0kncy5cu7m8...[39m
+29-09-2025 22:51:49:5149 [31merror[39m: [31mGemini API Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent: [503 Service Unavailable] The model is overloaded. Please try again later.[39m
+29-09-2025 22:51:49:5149 [31merror[39m: [31mJob cmg58vma20003i0kncy5cu7m8 failed: Failed to generate response from Gemini.[39m
+29-09-2025 22:51:59:5159 [32minfo[39m: [32mProcessing job cmg58vma20003i0kncy5cu7m8...[39m
+29-09-2025 22:52:03:523 [31merror[39m: [31mGemini API Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent: [503 Service Unavailable] The model is overloaded. Please try again later.[39m
+29-09-2025 22:52:03:523 [31merror[39m: [31mJob cmg58vma20003i0kncy5cu7m8 failed: Failed to generate response from Gemini.[39m
+29-09-2025 22:56:56:5656 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg58vma20003i0kncy5cu7m8 200 113 - 29.732 ms[39m
+[36m[39m
+29-09-2025 23:02:32:232 [36mhttp[39m: [36m::1 POST /api/v1/cv/evaluate 202 52 - 38.520 ms[39m
+[36m[39m
+29-09-2025 23:02:32:232 [32minfo[39m: [32mProcessing job cmg59cdzo0005i0knoy1bwqzw...[39m
+29-09-2025 23:02:36:236 [31merror[39m: [31mGemini API Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent: [503 Service Unavailable] The model is overloaded. Please try again later.[39m
+29-09-2025 23:02:36:236 [31merror[39m: [31mJob cmg59cdzo0005i0knoy1bwqzw failed: Failed to generate response from Gemini.[39m
+29-09-2025 23:02:41:241 [32minfo[39m: [32mProcessing job cmg59cdzo0005i0knoy1bwqzw...[39m
+29-09-2025 23:02:59:259 [31merror[39m: [31mGemini API Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent: [503 Service Unavailable] The model is overloaded. Please try again later.[39m
+29-09-2025 23:02:59:259 [31merror[39m: [31mJob cmg59cdzo0005i0knoy1bwqzw failed: Failed to generate response from Gemini.[39m
+29-09-2025 23:03:09:39 [32minfo[39m: [32mProcessing job cmg59cdzo0005i0knoy1bwqzw...[39m
+29-09-2025 23:03:11:311 [31merror[39m: [31mGemini API Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent: [503 Service Unavailable] The model is overloaded. Please try again later.[39m
+29-09-2025 23:03:11:311 [31merror[39m: [31mJob cmg59cdzo0005i0knoy1bwqzw failed: Failed to generate response from Gemini.[39m

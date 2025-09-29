@@ -27,8 +27,8 @@ export const fetchKeyFilesFromRepo = async (repoUrl) => {
     'package.json',
     'server.js',
     'index.js',
-    'src/services/pipeline.service.js',
-    'src/controllers/evaluate.controller.js',
+    'src/models/pipelineCVModel.js',
+    'src/controllers/evaluatationCVController.js',
   ];
 
   let combinedContent = '--- GITHUB CODE CONTEXT ---\n\n';

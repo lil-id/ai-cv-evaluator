@@ -1,12 +1,12 @@
+import 'dotenv/config';
 import http from "http";
 import cors from "cors";
 import helmet from "helmet";
 import express from "express";
 import bodyParser from "body-parser";
+import routes from "./routes/index.js";
 import logger from "./utils/logger/logger.js";
 import morganMiddleware from "./middlewares/morganMiddleware.js";
-import routes from "./routes/index.js";
-import 'dotenv/config';
 
 const app = express();
 const PORT = process.env.PORT || 3000;

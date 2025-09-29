@@ -1,0 +1,57 @@
+name: Staging Environment API v1
+on:
+  push:
+    branches:
+      - dev
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Continuous Integration
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 20
+      - run: npm ci
+  docker_build:
+    runs-on: ubuntu-latest
+    name: Docker Image Build
+    needs: [build]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Login to Docker Hub
+        uses: docker/login-action@v1
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+      - name: Modify .env file
+        run: |
+          echo "${{ secrets.ENV_FILE_DEVELOPMENT }}" > .env
+      - name: Build Docker Image
+        uses: docker/build-push-action@v2
+        with:
+          context: .
+          file: Dockerfile
+          push: true
+          tags: liloid/${{ secrets.IMAGE_NAME }}:latest
+  deploy:
+    runs-on: ubuntu-latest
+    name: Continuous Deployment
+    needs: [docker_build]
+    steps:
+      - name: Deploy using SSH
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.GCP_HOST_VM }}
+          username: ${{ secrets.GCP_USERNAME_VM }}
+          key: ${{ secrets.GCP_SSH_PRIVATE_KEY_VM }}
+          port: ${{ secrets.PORT }}
+          passphrase: ${{ secrets.PASSPHRASE }}
+          script: |
+            echo ${{ secrets.PASSPHRASE }} | sudo -S docker container stop ${{ secrets.IMAGE_NAME }}
+            echo ${{ secrets.PASSPHRASE }} | sudo -S docker container rm ${{ secrets.IMAGE_NAME }}
+            echo ${{ secrets.PASSPHRASE }} | sudo -S docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
+            echo ${{ secrets.PASSPHRASE }} | sudo -S docker pull liloid/${{ secrets.IMAGE_NAME }}:latest
+            echo ${{ secrets.PASSPHRASE }} | sudo -S docker container run -d -p ${{ secrets.EXPOSE_PORT }}:3000 --cpus=1.5 -m 1g --network=${{ secrets.DOCKER_NETWORK }} --name=${{ secrets.IMAGE_NAME }} liloid/${{ secrets.IMAGE_NAME }}
+            echo ${{ secrets.PASSPHRASE }} | sudo -S docker update --restart always ${{ secrets.IMAGE_NAME }}
+

@@ -1,9 +1,10 @@
 import path from 'path';
-import pdf from 'pdf-parse/lib/pdf-parse.js';
+import multer from 'multer';
 import fs from 'fs/promises';
-import logger from '../logger/logger.js';
 import { v4 as uuidv4 } from 'uuid';
 import docxParser from 'docx-parser';
+import logger from '../logger/logger.js';
+import pdf from 'pdf-parse/lib/pdf-parse.js';
 
 export const generateUniqueFilename = (originalName) => {
   const ext = path.extname(originalName);
@@ -11,6 +12,24 @@ export const generateUniqueFilename = (originalName) => {
   const uniqueId = uuidv4().slice(0, 8);
   return `${baseName}-${uniqueId}${ext}`;
 };
+
+// Konfigurasi Multer untuk menangani penyimpanan file
+const storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+      cb(null, "uploads/");
+  },
+  filename: function (req, file, cb) {
+      const uniqueFilename = generateUniqueFilename(file.originalname);
+      cb(null, uniqueFilename);
+  },
+});
+
+export const upload = multer({
+  storage: storage,
+  limits: {
+      fileSize: 5 * 1024 * 1024, // no larger than 5MB
+  },
+});
 
 /**
  * Membaca konten dari sebuah file berdasarkan path-nya dan mengonversinya menjadi teks.

@@ -606,3 +606,171 @@
 27-09-2025 21:12:17:1217 [31merror[39m: [31mJob cmg2aiwi10003i0i4v23432pa failed: runEvaluationPipeline is not defined[39m
 27-09-2025 21:14:00:140 [31merror[39m: [31mGemini API Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent: [400 Bad Request] Invalid JSON payload received. Unknown name "safetySettings" at 'generation_config': Cannot find field. [{"@type":"type.googleapis.com/google.rpc.BadRequest","fieldViolations":[{"field":"generation_config","description":"Invalid JSON payload received. Unknown name \"safetySettings\" at 'generation_config': Cannot find field."}]}][39m
 27-09-2025 21:14:00:140 [31merror[39m: [31mJob cmg2al2je0001i05shvluwy9d failed: Failed to generate response from Gemini.[39m
+28-09-2025 23:56:17:5617 [31merror[39m: [31mGet Result Error: resultService is not defined[39m
+29-09-2025 00:01:16:116 [31merror[39m: [31mGemini API Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent: [503 Service Unavailable] The service is currently unavailable.[39m
+29-09-2025 00:01:16:116 [31merror[39m: [31mJob cmg3w00x20001i0dt6b9wniwm failed: Failed to generate response from Gemini.[39m
+29-09-2025 00:03:25:325 [31merror[39m: [31mGemini API Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent: [503 Service Unavailable] The service is currently unavailable.[39m
+29-09-2025 00:03:25:325 [31merror[39m: [31mJob cmg3w1j4w0003i0dtgx424a9c failed: Failed to generate response from Gemini.[39m
+29-09-2025 00:24:50:2450 [31merror[39m: [31mGet Result Error: cv_match_rate is not defined[39m
+29-09-2025 00:29:58:2958 [31merror[39m: [31mGet Result Error: Cannot read properties of null (reading 'cv_match_rate')[39m
+29-09-2025 00:31:14:3114 [31merror[39m: [31mGet Result Error: Cannot read properties of null (reading 'cv_match_rate')[39m
+29-09-2025 00:36:30:3630 [31merror[39m: [31mGemini API Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent: fetch failed[39m
+29-09-2025 00:36:30:3630 [31merror[39m: [31mJob cmg3x7u7m0004i0suk3kd1gbx failed: Failed to generate response from Gemini.[39m
+29-09-2025 00:36:36:3636 [31merror[39m: [31mGemini API Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent: [503 Service Unavailable] The service is currently unavailable.[39m
+29-09-2025 00:36:36:3636 [31merror[39m: [31mJob cmg3x7u7m0004i0suk3kd1gbx failed: Failed to generate response from Gemini.[39m
+29-09-2025 00:37:16:3716 [31merror[39m: [31mGemini API Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent: [503 Service Unavailable] The model is overloaded. Please try again later.[39m
+29-09-2025 00:37:16:3716 [31merror[39m: [31mJob cmg3x7u7m0004i0suk3kd1gbx failed: Failed to generate response from Gemini.[39m
+29-09-2025 10:50:51:5051 [31merror[39m: [31mIORedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+29-09-2025 10:50:51:5051 [31merror[39m: [31mIORedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+29-09-2025 10:50:51:5051 [31merror[39m: [31mIORedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+29-09-2025 10:50:51:5051 [31merror[39m: [31mIORedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+29-09-2025 10:50:51:5051 [31merror[39m: [31mIORedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+29-09-2025 10:50:52:5052 [31merror[39m: [31mIORedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+29-09-2025 10:50:52:5052 [31merror[39m: [31mIORedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+29-09-2025 10:50:52:5052 [31merror[39m: [31mIORedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+29-09-2025 10:50:53:5053 [31merror[39m: [31mIORedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+29-09-2025 10:50:53:5053 [31merror[39m: [31mIORedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+29-09-2025 10:50:54:5054 [31merror[39m: [31mIORedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+29-09-2025 10:50:54:5054 [31merror[39m: [31mIORedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+29-09-2025 10:50:55:5055 [31merror[39m: [31mIORedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+29-09-2025 10:50:55:5055 [31merror[39m: [31mIORedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+29-09-2025 10:50:56:5056 [31merror[39m: [31mIORedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+29-09-2025 10:50:57:5057 [31merror[39m: [31mIORedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+29-09-2025 10:50:58:5058 [31merror[39m: [31mIORedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+29-09-2025 10:50:59:5059 [31merror[39m: [31mIORedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+29-09-2025 10:50:59:5059 [31merror[39m: [31mIORedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+29-09-2025 10:51:00:510 [31merror[39m: [31mIORedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+29-09-2025 10:51:01:511 [31merror[39m: [31mIORedis Client Error connect ECONNREFUSED 127.0.0.1:6379[39m
+29-09-2025 14:18:08:188 [31merror[39m: [31mCreate Job Posting Error: Cannot read properties of undefined (reading 'originalname')[39m
+29-09-2025 14:21:31:2131 [31merror[39m: [31mCreate Job Posting Error: Cannot read properties of undefined (reading 'originalname')[39m
+29-09-2025 14:21:49:2149 [31merror[39m: [31mCreate Job Posting Error: Cannot read properties of undefined (reading 'originalname')[39m
+29-09-2025 14:22:24:2224 [31merror[39m: [31mCreate Job Posting Error: Cannot read properties of undefined (reading 'originalname')[39m
+29-09-2025 14:23:35:2335 [31merror[39m: [31mCreate Job Posting Error: [39m
+[31mInvalid `prisma.vectorEmbedding.create()` invocation:[39m
+
+
+[31mOperation 'createOne' for model 'VectorEmbedding' does not match any query.[39m
+29-09-2025 14:31:50:3150 [31merror[39m: [31mCreate Job Posting Error: pgvector is not defined[39m
+29-09-2025 14:32:18:3218 [31merror[39m: [31mCreate Job Posting Error: [39m
+[31mInvalid `prisma.$executeRawUnsafe()` invocation:[39m
+
+
+[31mRaw query failed. Code: `23502`. Message: `Failing row contains (null, You'll be building new product features alongside a frontend eng..., [-0.0046263565,0.0036607666,0.0037804279,-0.08218382,-0.00037249..., {"type": "job_description", "jobTitle": "Product Engineer (Backe..., 2025-09-29 06:32:18.187).`[39m
+29-09-2025 14:33:36:3336 [31merror[39m: [31mCreate Job Posting Error: savedEmbedding is not defined[39m
+29-09-2025 14:35:01:351 [31merror[39m: [31mCreate Job Posting Error: [39m
+[31mInvalid `prisma.jobPosting.create()` invocation:[39m
+
+[31m{[39m
+[31m  data: {[39m
+[31m    id: "product-engineer-backend-2025-eaufxoc1",[39m
+[31m    title: "Product Engineer (Backend) 2025",[39m
+[31m    studyCaseBriefFileId: undefined,[39m
+[31m    descriptionEmbeddingId: undefined,[39m
+[31m+   studyCaseBriefFile: {[39m
+[31m+     create: UploadedFileCreateWithoutJobPostingsAsBriefInput | UploadedFileUncheckedCreateWithoutJobPostingsAsBriefInput,[39m
+[31m+     connectOrCreate: UploadedFileCreateOrConnectWithoutJobPostingsAsBriefInput,[39m
+[31m+     connect: UploadedFileWhereUniqueInput[39m
+[31m+   }[39m
+[31m  }[39m
+[31m}[39m
+
+[31mArgument `studyCaseBriefFile` is missing.[39m
+29-09-2025 14:35:54:3554 [31merror[39m: [31mCreate Job Posting Error: [39m
+[31mInvalid `prisma.jobPosting.create()` invocation:[39m
+
+[31m{[39m
+[31m  data: {[39m
+[31m    id: "product-engineer-backend-2025-qptig8in",[39m
+[31m    title: "Product Engineer (Backend) 2025",[39m
+[31m    studyCaseBriefFileId: undefined,[39m
+[31m    descriptionEmbeddingId: undefined,[39m
+[31m+   studyCaseBriefFile: {[39m
+[31m+     create: UploadedFileCreateWithoutJobPostingsAsBriefInput | UploadedFileUncheckedCreateWithoutJobPostingsAsBriefInput,[39m
+[31m+     connectOrCreate: UploadedFileCreateOrConnectWithoutJobPostingsAsBriefInput,[39m
+[31m+     connect: UploadedFileWhereUniqueInput[39m
+[31m+   }[39m
+[31m  }[39m
+[31m}[39m
+
+[31mArgument `studyCaseBriefFile` is missing.[39m
+29-09-2025 14:37:43:3743 [31merror[39m: [31mCreate Job Posting Error: [39m
+[31mInvalid `prisma.jobPosting.create()` invocation:[39m
+
+[31m{[39m
+[31m  data: {[39m
+[31m    id: "product-engineer-backend-2025-zu6r0zby",[39m
+[31m    title: "Product Engineer (Backend) 2025",[39m
+[31m    studyCaseBriefFileId: undefined,[39m
+[31m    descriptionEmbeddingId: "l65pseap2gvwkluqfi2wveto",[39m
+[31m+   studyCaseBriefFile: {[39m
+[31m+     create: UploadedFileCreateWithoutJobPostingsAsBriefInput | UploadedFileUncheckedCreateWithoutJobPostingsAsBriefInput,[39m
+[31m+     connectOrCreate: UploadedFileCreateOrConnectWithoutJobPostingsAsBriefInput,[39m
+[31m+     connect: UploadedFileWhereUniqueInput[39m
+[31m+   }[39m
+[31m  }[39m
+[31m}[39m
+
+[31mArgument `studyCaseBriefFile` is missing.[39m
+29-09-2025 14:43:46:4346 [31merror[39m: [31mEvaluation Request Error: [39m
+[31mInvalid `prisma.evaluationJob.create()` invocation:[39m
+
+[31m{[39m
+[31m  data: {[39m
+[31m    jobPostingId: "product-engineer-backend-2025-kjeolo6d",[39m
+[31m    cvFileId: "cmg4nrbnn0000i09j0z3hkxbn",[39m
+[31m    projectReportFileId: "cmg4qh39p0001i07kyiwcztco",[39m
+[31m    status: "QUEUED",[39m
+[31m+   jobDescription: String[39m
+[31m  }[39m
+[31m}[39m
+
+[31mArgument `jobDescription` is missing.[39m
+29-09-2025 15:25:13:2513 [31merror[39m: [31mEvaluation Request Error: newJob is not defined[39m
+29-09-2025 15:25:13:2513 [31merror[39m: [31mError reading file uploads/Software Engineer_Kholil Haq Alim Hakim-7afd6f42.pdf: ENOENT: no such file or directory, open 'uploads/Software Engineer_Kholil Haq Alim Hakim-7afd6f42.pdf'[39m
+29-09-2025 15:25:13:2513 [31merror[39m: [31mJob cmg4t09rp0001i0fzb40old4a failed: Could not read or parse file: Software Engineer_Kholil Haq Alim Hakim-7afd6f42.pdf[39m
+29-09-2025 15:25:18:2518 [31merror[39m: [31mError reading file uploads/Software Engineer_Kholil Haq Alim Hakim-7afd6f42.pdf: ENOENT: no such file or directory, open 'uploads/Software Engineer_Kholil Haq Alim Hakim-7afd6f42.pdf'[39m
+29-09-2025 15:25:18:2518 [31merror[39m: [31mJob cmg4t09rp0001i0fzb40old4a failed: Could not read or parse file: Software Engineer_Kholil Haq Alim Hakim-7afd6f42.pdf[39m
+29-09-2025 15:25:29:2529 [31merror[39m: [31mError reading file uploads/Software Engineer_Kholil Haq Alim Hakim-7afd6f42.pdf: ENOENT: no such file or directory, open 'uploads/Software Engineer_Kholil Haq Alim Hakim-7afd6f42.pdf'[39m
+29-09-2025 15:25:29:2529 [31merror[39m: [31mJob cmg4t09rp0001i0fzb40old4a failed: Could not read or parse file: Software Engineer_Kholil Haq Alim Hakim-7afd6f42.pdf[39m
+29-09-2025 15:29:05:295 [31merror[39m: [31mEvaluation Request Error: newJob is not defined[39m
+29-09-2025 15:29:06:296 [31merror[39m: [31mJob cmg4t58mc0004i0ax17l570f0 failed: Cannot read properties of undefined (reading 'storagePath')[39m
+29-09-2025 15:29:11:2911 [31merror[39m: [31mJob cmg4t58mc0004i0ax17l570f0 failed: Cannot read properties of undefined (reading 'storagePath')[39m
+29-09-2025 15:29:21:2921 [31merror[39m: [31mJob cmg4t58mc0004i0ax17l570f0 failed: Cannot read properties of undefined (reading 'storagePath')[39m
+29-09-2025 15:32:18:3218 [31merror[39m: [31mEvaluation Request Error: newJob is not defined[39m
+29-09-2025 15:32:18:3218 [31merror[39m: [31mJob cmg4t9d8e0001i0ls8301dyuu failed: Cannot read properties of undefined (reading 'storagePath')[39m
+29-09-2025 15:32:23:3223 [31merror[39m: [31mJob cmg4t9d8e0001i0ls8301dyuu failed: Cannot read properties of undefined (reading 'storagePath')[39m
+29-09-2025 15:32:34:3234 [31merror[39m: [31mJob cmg4t9d8e0001i0ls8301dyuu failed: Cannot read properties of undefined (reading 'storagePath')[39m
+29-09-2025 15:33:32:3332 [31merror[39m: [31mEvaluation Request Error: newJob is not defined[39m
+29-09-2025 18:27:37:2737 [31merror[39m: [31mRubric Upload Error: [39m
+[31mInvalid `prisma.$executeRawUnsafe()` invocation:[39m
+
+
+[31mTransaction API error: Transaction already closed: A query cannot be executed on an expired transaction. The timeout for this transaction was 5000 ms, however 5076 ms passed since the start of the transaction. Consider increasing the interactive transaction timeout or doing less work in the transaction.[39m
+29-09-2025 18:34:18:3418 [31merror[39m: [31mJob cmg4zqvow0004i0b1qtn0mzep failed: Could not retrieve CV evaluation rubrics from the database.[39m
+29-09-2025 18:34:49:3449 [31merror[39m: [31mJob cmg4zqvow0004i0b1qtn0mzep failed: Could not retrieve CV evaluation rubrics from the database.[39m
+29-09-2025 18:35:25:3525 [31merror[39m: [31mJob cmg4zqvow0004i0b1qtn0mzep failed: Could not retrieve CV evaluation rubrics from the database.[39m
+29-09-2025 18:41:39:4139 [31merror[39m: [31mJob cmg4zzjit0001i0hshsha9fh4 failed: Could not retrieve Project evaluation rubrics from the database.[39m
+29-09-2025 18:42:48:4248 [31merror[39m: [31mJob cmg4zzjit0001i0hshsha9fh4 failed: Could not retrieve Project evaluation rubrics from the database.[39m
+29-09-2025 18:44:02:442 [31merror[39m: [31mJob cmg4zzjit0001i0hshsha9fh4 failed: Could not retrieve Project evaluation rubrics from the database.[39m
+29-09-2025 18:50:47:5047 [31merror[39m: [31mGemini Embedding Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:embedContent: [503 Service Unavailable] The service is currently unavailable.[39m
+29-09-2025 18:50:48:5048 [31merror[39m: [31mRubric Upload Error: Failed to create embedding.[39m
+29-09-2025 22:17:29:1729 [31merror[39m: [31mLogin Error: secretOrPrivateKey must have a value[39m
+29-09-2025 22:20:03:203 [31merror[39m: [31mLogin Error: secretOrPrivateKey must have a value[39m
+29-09-2025 22:26:42:2642 [31merror[39m: [31mLogin Error: secretOrPrivateKey must have a value[39m
+29-09-2025 22:26:44:2644 [31merror[39m: [31mLogin Error: secretOrPrivateKey must have a value[39m
+29-09-2025 22:26:46:2646 [31merror[39m: [31mLogin Error: secretOrPrivateKey must have a value[39m
+29-09-2025 22:37:22:3722 [31merror[39m: [31mRefresh Token Error: invalid signature[39m
+29-09-2025 22:37:54:3754 [31merror[39m: [31mLogin Error: Invalid credentials[39m
+29-09-2025 22:38:18:3818 [31merror[39m: [31mLogin Error: Invalid credentials[39m
+29-09-2025 22:51:40:5140 [31merror[39m: [31mGemini API Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent: [503 Service Unavailable] The model is overloaded. Please try again later.[39m
+29-09-2025 22:51:40:5140 [31merror[39m: [31mJob cmg58vma20003i0kncy5cu7m8 failed: Failed to generate response from Gemini.[39m
+29-09-2025 22:51:49:5149 [31merror[39m: [31mGemini API Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent: [503 Service Unavailable] The model is overloaded. Please try again later.[39m
+29-09-2025 22:51:49:5149 [31merror[39m: [31mJob cmg58vma20003i0kncy5cu7m8 failed: Failed to generate response from Gemini.[39m
+29-09-2025 22:52:03:523 [31merror[39m: [31mGemini API Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent: [503 Service Unavailable] The model is overloaded. Please try again later.[39m
+29-09-2025 22:52:03:523 [31merror[39m: [31mJob cmg58vma20003i0kncy5cu7m8 failed: Failed to generate response from Gemini.[39m
+29-09-2025 23:02:36:236 [31merror[39m: [31mGemini API Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent: [503 Service Unavailable] The model is overloaded. Please try again later.[39m
+29-09-2025 23:02:36:236 [31merror[39m: [31mJob cmg59cdzo0005i0knoy1bwqzw failed: Failed to generate response from Gemini.[39m
+29-09-2025 23:02:59:259 [31merror[39m: [31mGemini API Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent: [503 Service Unavailable] The model is overloaded. Please try again later.[39m
+29-09-2025 23:02:59:259 [31merror[39m: [31mJob cmg59cdzo0005i0knoy1bwqzw failed: Failed to generate response from Gemini.[39m
+29-09-2025 23:03:11:311 [31merror[39m: [31mGemini API Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent: [503 Service Unavailable] The model is overloaded. Please try again later.[39m
+29-09-2025 23:03:11:311 [31merror[39m: [31mJob cmg59cdzo0005i0knoy1bwqzw failed: Failed to generate response from Gemini.[39m

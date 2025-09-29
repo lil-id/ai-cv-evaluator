@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon index.js",
-    "seed": "node helpers/seed/seed.js",
+    "seed_admin": "node helpers/seed/seedAdmin.js",
+    "seed_rubric": "node helpers/seed/seedRubric.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -27,11 +28,14 @@
     "helmet": "^8.1.0",
     "ioredis": "^5.8.0",
     "joi": "^18.0.1",
+    "jsonwebtoken": "^9.0.2",
     "morgan": "^1.10.1",
     "multer": "^2.0.2",
+    "papaparse": "^5.5.3",
     "pdf-parse": "^1.1.1",
     "pgvector": "^0.2.1",
     "redis": "^5.8.2",
+    "slugify": "^1.6.6",
     "uuid": "^13.0.0",
     "winston": "^3.17.0"
   },

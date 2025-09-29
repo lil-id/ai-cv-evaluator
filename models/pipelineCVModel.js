@@ -2,11 +2,12 @@ import prisma from "../helpers/db/prisma.js";
 import { maskPII } from "../utils/file/piiUtility.js"; // Fungsi utilitas untuk anonimisasi
 import { readFileContent } from "../utils/file/fileUtility.js"; // Fungsi utilitas untuk membaca file
 import { generateStructuredResponse } from "../helpers/llm/gemini.js"; // Asumsi client Gemini diinisialisasi di sini
-import { fetchKeyFilesFromRepo } from "../utils/github/githubUtility.js"; // Fungsi utilitas untuk mengambil file dari GitHub
+import { fetchKeyFilesFromRepo } from "../helpers/github/githubUtility.js"; // Fungsi utilitas untuk mengambil file dari GitHub
 import {
     createCvExtractionPrompt,
     createCvEvaluationPrompt,
     createProjectEvaluationPrompt,
+    createFinalSummaryPrompt,
 } from "../utils/prompt/prompt.js"; // Fungsi untuk membuat prompt ekstraksi CV
 
 // Placeholder untuk fungsi-fungsi AI
@@ -89,24 +90,54 @@ export const evaluateProject = async (
     return evaluationResult;
 };
 
-const refineAndVerify = async (cvEval, projectEval) => {
-    /* ... Panggilan LLM ke-4 (kritikus) ... */ return {
-        ...cvEval,
-        ...projectEval,
-        overall_summary: "...",
+export const refineAndVerify = async (
+    cvEvaluationResult,
+    projectEvaluationResult
+) => {
+    // Langkah 1: Transformasi Data Skor (Logika Internal)
+    const rawCvScore = cvEvaluationResult.weighted_average_score; // misal: 4.3
+    const rawProjectScore = projectEvaluationResult.weighted_average_score; // misal: 4.75
+
+    // Mengonversi ke format output akhir sesuai contoh di brief
+    const finalCvMatchRate = (rawCvScore * 20) / 100; // (4.3 * 20) / 100 = 0.86
+    const finalProjectScore = rawProjectScore * 2; // 4.75 * 2 = 9.5
+
+    // Langkah 2: Augmentation (Membangun Prompt untuk Ultra-Summarization)
+    const prompt = createFinalSummaryPrompt(
+        cvEvaluationResult.feedback, // Feedback panjang dari evaluasi CV
+        projectEvaluationResult.feedback // Feedback panjang dari evaluasi Proyek
+    );
+
+    // Langkah 3: Generation (Memanggil LLM untuk mendapatkan 3 ringkasan singkat)
+    const conciseSummaries = await generateStructuredResponse(prompt, {
+        temperature: 0.4, // Cukup untuk merangkai kalimat, tapi tetap to-the-point
+    });
+
+    // Langkah 4: Kompilasi Hasil Akhir sesuai kontrak API
+    return {
+        cv_match_rate: finalCvMatchRate,
+        cv_feedback: conciseSummaries.concise_cv_feedback, // Menggunakan hasil ringkasan
+        project_score: finalProjectScore,
+        project_feedback: conciseSummaries.concise_project_feedback, // Menggunakan hasil ringkasan
+        overall_summary: conciseSummaries.final_summary, // Menggunakan hasil ringkasan
     };
 };
 
-export const runEvaluationPipeline = async (jobId) => {
+export const runEvaluationPipeline = async (evaluationJobId) => {
     // Langkah 0: Ambil semua data pekerjaan dari database
     const job = await prisma.evaluationJob.findUnique({
-        where: { id: jobId },
+        where: { id: evaluationJobId },
         include: {
-            cvFile: true,
-            projectReportFile: true,
-            studyCaseBriefFile: true,
+          jobPosting: {
+            include: {
+              studyCaseBriefFile: true,
+              descriptionEmbedding: true
+            }
+          },
+          cvFile: true,
+          projectReportFile: true,
         },
-    });
+      });    
 
     if (!job) throw new Error("Job not found!");
 
@@ -116,8 +147,9 @@ export const runEvaluationPipeline = async (jobId) => {
         job.projectReportFile.storagePath
     );
     const studyCaseBriefContent = await readFileContent(
-        job.studyCaseBriefFile.storagePath
+        job.jobPosting.studyCaseBriefFile.storagePath
     );
+    const jobDescription = job.jobPosting.descriptionEmbedding.content;
 
     // Langkah 2: Lakukan anonimisasi PII pada konten CV
     const anonymizedCvContent = maskPII(cvContent);
@@ -129,10 +161,8 @@ export const runEvaluationPipeline = async (jobId) => {
     // Step 3b: Evaluasi Kecocokan CV (menggunakan RAG untuk rubrik CV)
     const cvEvaluation = await evaluateCvMatch(
         structuredCv,
-        job.jobDescription
+        jobDescription
     );
-
-    console.log("CV Evaluation Result:", cvEvaluation);
 
     // Step 3c: Evaluasi Proyek (menggunakan RAG untuk rubrik Proyek & brief)
     const projectEvaluation = await evaluateProject(
@@ -144,11 +174,5 @@ export const runEvaluationPipeline = async (jobId) => {
     const finalResult = await refineAndVerify(cvEvaluation, projectEvaluation);
 
     // Langkah 4: Format output sesuai kontrak API
-    return {
-        cv_match_rate: finalResult.match_rate,
-        cv_feedback: finalResult.feedback,
-        project_score: finalResult.score,
-        project_feedback: finalResult.feedback, // Perlu dibedakan di implementasi final
-        overall_summary: finalResult.overall_summary,
-    };
+    return finalResult;
 };

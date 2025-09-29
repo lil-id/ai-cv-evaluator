@@ -39,10 +39,14 @@ export const createCvExtractionPrompt = (cvText) => {
     `;
 };
 
-export const createCvEvaluationPrompt = (structuredCv, jobDescription, rubrics) => {
-  const rubricsText = rubrics.map(r => `- ${r.content}`).join('\n');
+export const createCvEvaluationPrompt = (
+    structuredCv,
+    jobDescription,
+    rubrics
+) => {
+    const rubricsText = rubrics.map((r) => `- ${r.content}`).join("\n");
 
-  const jsonSchema = `{
+    const jsonSchema = `{
     "evaluation_details": [
       {
         "parameter": "string (nama parameter persis dari rubrik)",
@@ -54,7 +58,7 @@ export const createCvEvaluationPrompt = (structuredCv, jobDescription, rubrics) 
     "feedback": "string (ringkasan feedback kualitatif untuk kandidat)"
   }`;
 
-  return `
+    return `
     Anda adalah seorang Manajer Perekrutan Teknis yang sangat berpengalaman dan objektif.
     Tugas Anda adalah mengevaluasi CV kandidat berdasarkan deskripsi pekerjaan dan seperangkat rubrik penilaian yang ketat.
 
@@ -84,20 +88,27 @@ export const createCvEvaluationPrompt = (structuredCv, jobDescription, rubrics) 
   `;
 };
 
-export const createProjectEvaluationPrompt = (projectReport, studyCaseBrief, rubrics, codeContext) => {
-  const rubricsText = rubrics.map(r => `- ${r.content}`).join('\n');
+export const createProjectEvaluationPrompt = (
+    projectReport,
+    studyCaseBrief,
+    rubrics,
+    codeContext
+) => {
+    const rubricsText = rubrics.map((r) => `- ${r.content}`).join("\n");
 
-  const jsonSchema = `{
+    const jsonSchema = `{
     "evaluation_details": [
       {
-        "parameter": "string", "score": "integer", "justification": "string"
+        "parameter": "string",
+        "score": "integer",
+        "justification": "string"
       }
     ],
     "weighted_average_score": "float",
     "feedback": "string"
   }`;
 
-  return `
+    return `
     Anda adalah seorang Senior Software Engineer yang teliti dan objektif.
     Tugas Anda adalah mengevaluasi laporan proyek seorang kandidat berdasarkan brief studi kasus dan rubrik penilaian yang ketat.
 
@@ -126,6 +137,40 @@ export const createProjectEvaluationPrompt = (projectReport, studyCaseBrief, rub
     4.  Untuk parameter "Creativity / Bonus", analisis secara spesifik bagian "Future Improvements" atau "Bonus Work" dari laporan kandidat.
     5.  Hitung skor rata-rata tertimbang berdasarkan bobot pada setiap parameter.
     6.  Kembalikan seluruh hasil dalam format JSON yang valid sesuai skema berikut. JANGAN tambahkan teks lain di luar JSON.
+
+    Skema JSON yang harus Anda ikuti:
+    ${jsonSchema}
+  `;
+};
+
+export const createFinalSummaryPrompt = (longCvFeedback, longProjectFeedback) => {
+  const jsonSchema = `{
+    "concise_cv_feedback": "string (SATU kalimat ringkas)",
+    "concise_project_feedback": "string (SATU kalimat ringkas)",
+    "final_summary": "string (SATU kalimat rekomendasi akhir)"
+  }`;
+
+  return `
+    Anda adalah seorang Head of Engineering yang sangat sibuk dan hanya punya waktu untuk membaca poin-poin terpenting.
+    Tugas Anda adalah membaca dua paragraf feedback yang panjang dan mengubahnya menjadi tiga kalimat yang sangat singkat, padat, dan insightful.
+
+    Berikut adalah feedback panjang yang perlu Anda ringkas:
+
+    --- FEEDBACK EVALUASI CV (DETAIL) ---
+    ${longCvFeedback}
+    ---
+
+    --- FEEDBACK EVALUASI PROYEK (DETAIL) ---
+    ${longProjectFeedback}
+    ---
+
+    INSTRUKSI KETAT:
+    1.  Gunakan bahasa Inggris dalam memberikan jawaban.
+    2.  Buat "concise_cv_feedback": SATU kalimat dengan maksimal 10 kata yang merangkum kekuatan & kelemahan utama dari CV.
+    3.  Buat "concise_project_feedback": SATU kalimat dengan maksimal 10 kata yang merangkum kekuatan & kelemahan utama dari Proyek.
+    4.  Buat "final_summary": SATU kalimat yang memberikan kesimpulan dan rekomendasi akhir.
+    5.  Jangan gunakan lebih dari satu kalimat untuk setiap poin.
+    6.  Kembalikan HANYA dalam format JSON sesuai skema. Jangan ada teks tambahan.
 
     Skema JSON yang harus Anda ikuti:
     ${jsonSchema}

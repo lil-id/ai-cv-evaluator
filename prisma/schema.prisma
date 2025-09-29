@@ -5,63 +5,107 @@
 // Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
 
 generator client {
-  provider = "prisma-client-js"
+  provider        = "prisma-client-js"
   previewFeatures = ["postgresqlExtensions"]
 }
 
 datasource db {
-  provider = "postgresql"
-  url      = env("DATABASE_URL")
+  provider   = "postgresql"
+  url        = env("DATABASE_URL")
   extensions = [vector]
 }
 
 /// Model untuk mengelola semua file yang diunggah.
 model UploadedFile {
-  id                String   @id @default(cuid())
-  originalFilename  String
-  storagePath       String   @unique
-  mimeType          String
-  fileSize          Int
-  createdAt         DateTime @default(now())
-  
+  id                  String          @id @default(cuid())
+  originalFilename    String
+  storagePath         String          @unique
+  mimeType            String
+  fileSize            Int
   jobsAsCv            EvaluationJob[] @relation("CvFile")
   jobsAsProjectReport EvaluationJob[] @relation("ProjectReportFile")
-  jobsAsStudyCase     EvaluationJob[] @relation("StudyCaseBriefFile")
+  jobPostingsAsBrief  JobPosting[]    @relation("StudyCaseBriefFile")
+  createdAt           DateTime        @default(now())
 
   @@map("uploadedfiles")
 }
 
 /// Model inti yang merepresentasikan satu tugas evaluasi kandidat.
 model EvaluationJob {
-  id                  String      @id @default(cuid())
-  status              JobStatus   @default(QUEUED) // Enum: QUEUED, PROCESSING, COMPLETED, FAILED
-  jobDescription      String
-  result              Json?       // Tipe JSONB di Postgres untuk menyimpan hasil akhir
-  createdAt           DateTime    @default(now())
-  updatedAt           DateTime    @updatedAt
-
-  // Kunci asing untuk file-file terkait
+  id                  String       @id @default(cuid())
+  status              JobStatus    @default(QUEUED) // Enum: QUEUED, PROCESSING, COMPLETED, FAILED
+  result              Json? // Tipe JSONB di Postgres untuk menyimpan hasil akhir
+  jobPostingId        String
   cvFileId            String
   projectReportFileId String
-  studyCaseBriefId    String
-  
-  // Mendefinisikan relasi dengan UploadedFile
+  jobPosting          JobPosting   @relation(fields: [jobPostingId], references: [id])
   cvFile              UploadedFile @relation("CvFile", fields: [cvFileId], references: [id])
   projectReportFile   UploadedFile @relation("ProjectReportFile", fields: [projectReportFileId], references: [id])
-  studyCaseBriefFile  UploadedFile @relation("StudyCaseBriefFile", fields: [studyCaseBriefId], references: [id])
+  createdAt           DateTime     @default(now())
+  updatedAt           DateTime     @updatedAt
 
   @@map("evaluationjobs")
 }
 
 /// Model untuk menyimpan embedding vektor untuk RAG.
 model VectorEmbedding {
-  id        String    @id @default(cuid())
-  content   String    // Potongan teks asli yang di-embed
-  embedding Unsupported("vector(3072)") // Menggunakan tipe data `vector` dari pgvector. Ukuran (3072) tergantung model Gemini.
-  metadata  Json      // Untuk menyimpan metadata (misal: tipe rubrik, id studi kasus)
-  createdAt DateTime  @default(now())
+  id                String                      @id @default(cuid())
+  content           String // Potongan teks asli yang di-embed
+  embedding         Unsupported("vector(3072)") // Menggunakan tipe data `vector` dari pgvector. Ukuran (3072) tergantung model Gemini.
+  metadata          Json // Untuk menyimpan metadata (misal: tipe rubrik, id studi kasus)
+  jobPostingsAsDesc JobPosting[]                @relation("JobDescriptionEmbedding")
+  rubric            Rubric?                     @relation("RubricEmbedding")
+  createdAt         DateTime                    @default(now())
 
   @@map("vectorembeddings")
+}
+
+// Model untuk menyimpan informasi lowongan pekerjaan.
+model JobPosting {
+  id                     String          @id // ID unik (slug + cuid)
+  title                  String
+  studyCaseBriefFileId   String
+  studyCaseBriefFile     UploadedFile    @relation("StudyCaseBriefFile", fields: [studyCaseBriefFileId], references: [id])
+  descriptionEmbeddingId String
+  descriptionEmbedding   VectorEmbedding @relation("JobDescriptionEmbedding", fields: [descriptionEmbeddingId], references: [id])
+  evaluationJobs         EvaluationJob[]
+  createdAt              DateTime        @default(now())
+  updatedAt              DateTime        @updatedAt
+
+  @@map("jobpostings")
+}
+
+// Tabel untuk menyimpan data rubrik secara terstruktur
+model Rubric {
+  id             String          @id @default(cuid())
+  parameterName  String
+  evaluationType String // Misal: "CV_MATCH" atau "PROJECT_EVALUATION"
+  description    String          @db.Text
+  weight         Int
+  scoringGuide   String          @db.Text
+  createdAt      DateTime        @default(now())
+  embeddingId    String          @unique
+  embedding      VectorEmbedding @relation("RubricEmbedding", fields: [embeddingId], references: [id])
+
+  @@map("rubrics")
+}
+
+model User {
+  id           String   @id @default(cuid())
+  email        String   @unique
+  name         String
+  password     String
+  role         Role     @default(RECRUITER)
+  refreshToken String?  @unique
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@map("users")
+}
+
+enum Role {
+  ADMIN
+  RECRUITER
 }
 
 // Enum untuk status pekerjaan
