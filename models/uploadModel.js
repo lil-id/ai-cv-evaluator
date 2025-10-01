@@ -8,11 +8,8 @@ import prisma from "../helpers/db/prisma.js";
  * @returns {Promise<Array>} A promise that resolves to an array of the created file records.
  */
 export const saveFileData = async (filesData) => {
-    // Destructure the individual file objects from the main object
     const { cv, projectReport } = filesData;
 
-    // Use a Prisma transaction to ensure all or nothing is saved.
-    // This prevents partial data if one of the database writes fails.
     const savedFileRecords = await prisma.$transaction([
         prisma.uploadedFile.create({
             data: {

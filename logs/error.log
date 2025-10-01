@@ -774,3 +774,42 @@
 29-09-2025 23:02:59:259 [31merror[39m: [31mJob cmg59cdzo0005i0knoy1bwqzw failed: Failed to generate response from Gemini.[39m
 29-09-2025 23:03:11:311 [31merror[39m: [31mGemini API Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent: [503 Service Unavailable] The model is overloaded. Please try again later.[39m
 29-09-2025 23:03:11:311 [31merror[39m: [31mJob cmg59cdzo0005i0knoy1bwqzw failed: Failed to generate response from Gemini.[39m
+30-09-2025 22:00:45:045 [31merror[39m: [31mGemini API Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent: [503 Service Unavailable] The model is overloaded. Please try again later.[39m
+30-09-2025 22:00:45:045 [31merror[39m: [31mJob cmg6mkj2j0003i0uza3hpgbd4 failed: Failed to generate response from Gemini.[39m
+30-09-2025 22:02:48:248 [31merror[39m: [31mGemini API Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent: [503 Service Unavailable] The model is overloaded. Please try again later.[39m
+30-09-2025 22:02:48:248 [31merror[39m: [31mJob cmg6mkj2j0003i0uza3hpgbd4 failed: Failed to generate response from Gemini.[39m
+30-09-2025 22:02:54:254 [31merror[39m: [31mGemini API Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent: [503 Service Unavailable] The model is overloaded. Please try again later.[39m
+30-09-2025 22:02:54:254 [31merror[39m: [31mJob cmg6ml7o20005i0uzidixxlek failed: Failed to generate response from Gemini.[39m
+30-09-2025 22:03:02:32 [31merror[39m: [31mGemini API Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent: [503 Service Unavailable] The model is overloaded. Please try again later.[39m
+30-09-2025 22:03:02:32 [31merror[39m: [31mJob cmg6mkj2j0003i0uza3hpgbd4 failed: Failed to generate response from Gemini.[39m
+30-09-2025 22:03:02:32 [31merror[39m: [31mGemini API Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent: [429 Too Many Requests] You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits.[39m
+[31m* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 2[39m
+[31mPlease retry in 57.245353041s. [{"@type":"type.googleapis.com/google.rpc.QuotaFailure","violations":[{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerMinutePerProjectPerModel-FreeTier","quotaDimensions":{"location":"global","model":"gemini-2.5-pro"},"quotaValue":"2"}]},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Learn more about Gemini API quotas","url":"https://ai.google.dev/gemini-api/docs/rate-limits"}]},{"@type":"type.googleapis.com/google.rpc.RetryInfo","retryDelay":"57s"}][39m
+30-09-2025 22:03:02:32 [31merror[39m: [31mJob cmg6ml7o20005i0uzidixxlek failed: Failed to generate response from Gemini.[39m
+30-09-2025 22:03:15:315 [31merror[39m: [31mGemini API Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent: [503 Service Unavailable] The model is overloaded. Please try again later.[39m
+30-09-2025 22:03:15:315 [31merror[39m: [31mJob cmg6ml7o20005i0uzidixxlek failed: Failed to generate response from Gemini.[39m
+30-09-2025 22:10:51:1051 [31merror[39m: [31mGemini API Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent: [503 Service Unavailable] The model is overloaded. Please try again later.[39m
+30-09-2025 22:10:51:1051 [31merror[39m: [31mJob cmg6mvzef0007i0uznsj4inlp failed: Failed to generate response from Gemini.[39m
+30-09-2025 22:11:35:1135 [31merror[39m: [31mGemini API Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent: [503 Service Unavailable] The model is overloaded. Please try again later.[39m
+30-09-2025 22:11:35:1135 [31merror[39m: [31mJob cmg6mvzef0007i0uznsj4inlp failed: Failed to generate response from Gemini.[39m
+30-09-2025 22:12:36:1236 [31merror[39m: [31mGemini API Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent: [503 Service Unavailable] The model is overloaded. Please try again later.[39m
+30-09-2025 22:12:36:1236 [31merror[39m: [31mJob cmg6mvzef0007i0uznsj4inlp failed: Failed to generate response from Gemini.[39m
+30-09-2025 22:41:04:414 [31merror[39m: [31mGemini API Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent: [503 Service Unavailable] The model is overloaded. Please try again later.[39m
+30-09-2025 22:41:04:414 [31merror[39m: [31mJob cmg6nyw4y0009i0uz7vxhdjt6 failed: Failed to generate response from Gemini.[39m
+30-09-2025 22:41:10:4110 [31merror[39m: [31mGemini API Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent: [503 Service Unavailable] The model is overloaded. Please try again later.[39m
+30-09-2025 22:41:10:4110 [31merror[39m: [31mJob cmg6nyw4y0009i0uz7vxhdjt6 failed: Failed to generate response from Gemini.[39m
+30-09-2025 22:41:22:4122 [31merror[39m: [31mGemini API Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent: [503 Service Unavailable] The model is overloaded. Please try again later.[39m
+30-09-2025 22:41:22:4122 [31merror[39m: [31mJob cmg6nyw4y0009i0uz7vxhdjt6 failed: Failed to generate response from Gemini.[39m
+30-09-2025 23:13:34:1334 [31merror[39m: [31m[39m
+[31mInvalid `prisma.vectorEmbedding.deleteMany()` invocation:[39m
+
+
+[31mError occurred during query execution:[39m
+[31mConnectorError(ConnectorError { user_facing_error: None, kind: QueryError(PostgresError { code: "23001", message: "update or delete on table \"vectorembeddings\" violates RESTRICT setting of foreign key constraint \"rubrics_embeddingId_fkey\" on table \"rubrics\"", severity: "ERROR", detail: Some("Key (id)=(k3o73et8lw3rfk9exbi32cjp) is referenced from table \"rubrics\"."), column: None, hint: None }), transient: false })[39m
+30-09-2025 23:16:17:1617 [31merror[39m: [31mGemini API Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent: [503 Service Unavailable] The model is overloaded. Please try again later.[39m
+30-09-2025 23:16:17:1617 [31merror[39m: [31mJob cmg6p907w0001i0cv5w9zo89d failed: Failed to generate response from Gemini.[39m
+30-09-2025 23:16:54:1654 [31merror[39m: [31mGemini API Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent: [503 Service Unavailable] The model is overloaded. Please try again later.[39m
+30-09-2025 23:16:54:1654 [31merror[39m: [31mJob cmg6p907w0001i0cv5w9zo89d failed: Failed to generate response from Gemini.[39m
+30-09-2025 23:18:59:1859 [31merror[39m: [31mGemini API Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent: [503 Service Unavailable] The model is overloaded. Please try again later.[39m
+30-09-2025 23:18:59:1859 [31merror[39m: [31mJob cmg6p907w0001i0cv5w9zo89d failed: Failed to generate response from Gemini.[39m
+01-10-2025 10:07:55:755 [31merror[39m: [31mError occurred: listen EADDRINUSE: address already in use :::3000[39m

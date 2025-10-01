@@ -1,11 +1,19 @@
 import { Router } from "express";
 import logger from "../utils/logger/logger.js";
 import { upload } from "../utils/file/fileUtility.js";
-import { saveFileData } from "../models/uploadCVModel.js";
+import { saveFileData } from "../models/uploadModel.js";
 import { isAuthenticated } from "../middlewares/authMiddleware.js";
 
 const uploadCVController = Router();
 
+/**
+ * @route POST /upload
+ * @desc Upload CV and project report files.
+ * @access Protected (requires authentication)
+ * @returns {Object} JSON response with upload status and file details.
+ * @body {File} cv - The CV file to upload.
+ * @body {File} projectReport - The project report file to upload.
+ */
 uploadCVController.post(
     "/upload",
     isAuthenticated,

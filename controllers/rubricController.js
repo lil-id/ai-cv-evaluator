@@ -8,6 +8,12 @@ const upload = multer({ storage: multer.memoryStorage() });
 
 const rubricController = Router();
 
+/**
+ * @route GET /template
+ * @desc Generate and download a CSV template for rubrics.
+ * @access Protected (requires authentication)
+ * @returns {File} CSV file download.
+ */
 rubricController.get("/template", isAuthenticated, async (req, res) => {
     try {
         const csvTemplate = await generateRubricTemplate();
@@ -20,6 +26,13 @@ rubricController.get("/template", isAuthenticated, async (req, res) => {
     }
 });
 
+/**
+ * @route POST /upload
+ * @desc Upload a CSV file containing rubrics.
+ * @access Protected (requires authentication)
+ * @returns {Object} JSON response with upload status.
+ * @body {File} rubricFile - The CSV file containing rubrics.
+ */
 rubricController.post(
     "/upload",
     isAuthenticated,
@@ -36,7 +49,6 @@ rubricController.post(
                 message: "Rubrics uploaded and saved successfully.",
             });
         } catch (error) {
-            // Memberikan pesan error yang lebih spesifik jika validasi gagal
             logger.error("Rubric Upload Error:", error);
             res.status(error.statusCode || 500).json({
                 message: error.message || "Internal Server Error",

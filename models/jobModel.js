@@ -4,6 +4,16 @@ import prisma from "../helpers/db/prisma.js";
 import { createId } from "@paralleldrive/cuid2";
 import { embedContent } from "../helpers/llm/gemini.js";
 
+/**
+ * Saves file data to the database.
+ * 
+ * @param {Object} studyCaseBrief - The file object containing metadata about the uploaded file.
+ * @param {string} studyCaseBrief.originalname - The original name of the file.
+ * @param {string} studyCaseBrief.path - The storage path of the file.
+ * @param {string} studyCaseBrief.mimetype - The MIME type of the file.
+ * @param {number} studyCaseBrief.size - The size of the file in bytes.
+ * @returns {Promise<Object[]>} A promise that resolves to an array of saved file records.
+ */
 const saveFileData = async (studyCaseBrief) => {
     const savedFileRecords = await prisma.$transaction([
         prisma.uploadedFile.create({
@@ -18,14 +28,21 @@ const saveFileData = async (studyCaseBrief) => {
     return savedFileRecords;
 };
 
+/**
+ * Creates a new job posting.
+ * 
+ * @param {string} title - The title of the job posting.
+ * @param {string} description - The description of the job posting.
+ * @param {Object} briefFile - The file object containing metadata about the study case brief.
+ * @param {string} briefFile.originalname - The original name of the file.
+ * @param {string} briefFile.path - The storage path of the file.
+ * @param {string} briefFile.mimetype - The MIME type of the file.
+ * @param {number} briefFile.size - The size of the file in bytes.
+ * @returns {Promise<Object>} A promise that resolves to the newly created job posting object.
+ */
 export const createJobPosting = async (title, description, briefFile) => {
-    // 1. Simpan file brief studi kasus
     const savedBriefFile = await saveFileData(briefFile);
-
-    // 2. Buat embedding untuk deskripsi pekerjaan
     const descriptionEmbedding = await embedContent(description);
-
-    // 3. Simpan embedding ke database
     const metadataObject = { type: "job_description", jobTitle: title };
 
     const newId = createId();
@@ -38,12 +55,10 @@ export const createJobPosting = async (title, description, briefFile) => {
         pgvector.toSql(descriptionEmbedding)
     );
 
-    // 4. Buat Job ID yang unik dan human-readable
     const slug = slugify(title, { lower: true, strict: true });
     const uniqueId = createId().slice(0, 8);
     const jobId = `${slug}-${uniqueId}`;
 
-    // 5. Buat entitas JobPosting
     const newJobPosting = await prisma.jobPosting.create({
         data: {
             id: jobId,
@@ -56,6 +71,12 @@ export const createJobPosting = async (title, description, briefFile) => {
     return newJobPosting;
 };
 
+/**
+ * Retrieves a job posting by its ID.
+ * 
+ * @param {string} jobId - The unique identifier of the job posting.
+ * @returns {Promise<Object|null>} A promise that resolves to the job posting object if found, or null if not found.
+ */
 export const getJobPostingById = async (jobId) => {
     return await prisma.jobPosting.findUnique({
         where: { id: jobId },

@@ -11,6 +11,11 @@ const skip = () => {
   return env !== 'production' && env !== 'development';
 };
 
+/**
+ * Morgan middleware for logging HTTP requests.
+ * Logs requests in 'combined' format to the custom logger.
+ * Skips logging in non-production and non-development environments.
+ */
 const morganMiddleware = morgan(
   ':remote-addr :method :url :status :res[content-length] - :response-time ms',
   { stream, skip }

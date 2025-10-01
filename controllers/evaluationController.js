@@ -1,13 +1,18 @@
 import { Router } from "express";
 import logger from "../utils/logger/logger.js";
 import { isAuthenticated } from "../middlewares/authMiddleware.js";
-import { createAndQueueJob } from "../models/evaluationCVModel.js";
+import { createAndQueueJob } from "../models/evaluationModel.js";
 
 const evaluateCVController = Router();
 
+/**
+ * @route POST /evaluate
+ * @desc Accepts a CV evaluation request, creates a job, and queues it for processing.
+ * @access Protected (requires authentication)
+ * @returns {Object} JSON response with job ID and status.
+ */
 evaluateCVController.post("/evaluate", isAuthenticated, async (req, res) => {
     try {
-        // 1. Validasi Input
         const { jobId, cvFileId, projectReportFileId } = req.body;
 
         if (!jobId || !cvFileId || !projectReportFileId) {
@@ -17,14 +22,11 @@ evaluateCVController.post("/evaluate", isAuthenticated, async (req, res) => {
             });
         }
 
-        // 2. Delegasi ke Service Layer untuk membuat dan mengantrikan pekerjaan
         const newEvaluationJob = await createAndQueueJob(req.body);
 
-        // 3. Mengirim Respons Segera (Asynchronous Acknowledgement)
-        // Sesuai dokumen, kita harus segera merespons dengan ID dan status queued.
         res.status(202).json({
             id: newEvaluationJob.id,
-            status: "queued", // [cite: 32]
+            status: "queued",
         });
     } catch (error) {
         logger.error("Evaluation Request Error:", error);

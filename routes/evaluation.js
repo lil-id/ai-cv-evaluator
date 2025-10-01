@@ -1,7 +1,7 @@
-import evaluationCVController from '../controllers/evaluationCVController.js';
+import evaluationController from '../controllers/evaluationController.js';
 
 const setEvalutionRoutes = (router) => {
-    router.use('/cv', evaluationCVController);
+    router.use('/cv', evaluationController);
 }
 
 export default setEvalutionRoutes;

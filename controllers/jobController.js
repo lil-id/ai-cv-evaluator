@@ -6,6 +6,12 @@ import { createJobPosting, getJobPostingById } from "../models/jobModel.js";
 
 const jobController = Router();
 
+/**
+ * @route GET /job/:jobId
+ * @desc Retrieve a job posting by its ID.
+ * @access Protected (requires authentication)
+ * @returns {Object} JSON response with job posting details.
+ */
 jobController.get("/:jobId", isAuthenticated, async (req, res) => {
     try {
         const { jobId } = req.params;
@@ -22,6 +28,12 @@ jobController.get("/:jobId", isAuthenticated, async (req, res) => {
     }
 });
 
+/**
+ * @route POST /upload
+ * @desc Upload a job posting with a study case brief file.
+ * @access Protected (requires authentication)
+ * @returns {Object} JSON response with job ID and status.
+ */
 jobController.post("/upload", isAuthenticated, upload.single("studyCaseBrief"), async (req, res) => {
     try {
         const { jobTitle, jobDescriptionText } = req.body;

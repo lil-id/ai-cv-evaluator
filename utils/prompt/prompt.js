@@ -1,3 +1,13 @@
+/**
+ * Generates a prompt for extracting key information from a CV text.
+ *
+ * The function creates a detailed instruction prompt for a technical recruitment assistant
+ * to extract skills, experiences, and projects from the provided CV text. The extracted
+ * information must adhere strictly to the specified JSON schema.
+ *
+ * @param {string} cvText - The text content of the CV to be processed.
+ * @returns {string} A formatted prompt string containing instructions and the JSON schema.
+ */
 export const createCvExtractionPrompt = (cvText) => {
     const jsonSchema = `{
       "skills": ["string"],
@@ -39,6 +49,19 @@ export const createCvExtractionPrompt = (cvText) => {
     `;
 };
 
+/**
+ * Generates a prompt for an AI to evaluate a candidate's CV against a job description and rubrics.
+ *
+ * This function constructs a detailed prompt that instructs an AI, acting as an experienced Technical
+ * Hiring Manager, to score a candidate's structured CV data. The evaluation is based on a provided
+ * job description and a strict set of weighted rubrics. The output is expected to be a JSON object
+ * containing detailed scores, justifications, a weighted average, and qualitative feedback.
+ *
+ * @param {object} structuredCv - The candidate's CV data in a structured JSON format.
+ * @param {string} jobDescription - The text of the job description the candidate is being evaluated against.
+ * @param {Array<object>} rubrics - An array of rubric objects, where each object contains the evaluation criteria content.
+ * @returns {string} A formatted prompt string for the AI, including all context and instructions.
+ */
 export const createCvEvaluationPrompt = (
     structuredCv,
     jobDescription,
@@ -88,6 +111,20 @@ export const createCvEvaluationPrompt = (
   `;
 };
 
+/**
+ * Generates a prompt for an AI to evaluate a candidate's project deliverable.
+ *
+ * This function creates a comprehensive prompt for an AI, acting as a Senior Software Engineer,
+ * to assess a candidate's project report. The evaluation compares the report against a study
+ * case brief, a set of rubrics, and any available code context from a GitHub repository.
+ * The function requires the AI to return a structured JSON object with the evaluation results.
+ *
+ * @param {string} projectReport - The text content of the candidate's project report.
+ * @param {string} studyCaseBrief - The text content of the study case brief that defined the project requirements.
+ * @param {Array<object>} rubrics - An array of rubric objects for scoring the project.
+ * @param {string} codeContext - A string containing snippets of code from the candidate's repository for context.
+ * @returns {string} A formatted prompt string that directs the AI on how to perform the evaluation.
+ */
 export const createProjectEvaluationPrompt = (
     projectReport,
     studyCaseBrief,
@@ -143,6 +180,18 @@ export const createProjectEvaluationPrompt = (
   `;
 };
 
+/**
+ * Generates a prompt for an AI to create an ultra-concise summary of evaluation feedback.
+ *
+ * This function instructs an AI, role-playing as a busy Head of Engineering, to distill
+ * lengthy feedback from a CV and project evaluation into three single, insightful sentences.
+ * The function strictly requires the output to be in English and formatted as a specific
+ * JSON object.
+ *
+ * @param {string} longCvFeedback - The detailed, paragraph-length feedback from the CV evaluation.
+ * @param {string} longProjectFeedback - The detailed, paragraph-length feedback from the project evaluation.
+ * @returns {string} A formatted prompt string with strict instructions for summarization.
+ */
 export const createFinalSummaryPrompt = (longCvFeedback, longProjectFeedback) => {
   const jsonSchema = `{
     "concise_cv_feedback": "string (SATU kalimat ringkas)",

@@ -1,44 +1,51 @@
-// scripts/seed.js
 import fs from "fs/promises";
 import pgvector from "pgvector";
 import prisma from "../db/prisma.js";
-import { createId } from '@paralleldrive/cuid2';
-import { embedContent } from "../llm/gemini.js"; // Fungsi untuk membuat embedding
+import { createId } from "@paralleldrive/cuid2";
+import { embedContent } from "../llm/gemini.js";
 import logger from "../../utils/logger/logger.js";
 
+/**
+ * Seed rubric data into the database with vector embeddings.
+ * 
+ * This function reads rubric definitions from a JSON file, generates vector embeddings
+ * for each rubric, and stores them in the database. It first clears any existing
+ * embeddings to avoid duplicates.
+ */
 async function main() {
     logger.info("Starting seeding process...");
 
-    // 1. Baca data rubrik dari file JSON
     const rubricsFile = await fs.readFile("config/rubrics.json", "utf-8");
-    const rubricsData = JSON.parse(rubricsFile);
-    const allRubrics = [
-        ...rubricsData.cvEvaluation,
-        ...rubricsData.projectEvaluation,
-    ];
+    const allRubrics = JSON.parse(rubricsFile);
 
-    // 2. Hapus data lama (opsional, tapi baik untuk idempotensi)
     await prisma.vectorEmbedding.deleteMany({});
     logger.info("Old embeddings deleted.");
 
-    // 3. Loop, buat embedding, dan simpan ke DB
     for (const rubric of allRubrics) {
-        logger.info(`Embedding: "${rubric.parameter}"...`);
+        logger.info(`Processing: "${rubric.parameterName}"...`);
 
-        // Buat embedding dari konten (ini akan menghasilkan array angka, misal: [0.1, 0.2, ...])
-        const embeddingArray = await embedContent(rubric.content);
+        const contentToEmbed = `Description: ${rubric.description}. Weight: ${rubric.weight}%. Scoring Guide: ${rubric.scoringGuide}.`;
+        const embeddingArray = await embedContent(contentToEmbed);
+
+        const metadata = {
+            parameterName: rubric.parameterName,
+            evaluationType: rubric.evaluationType,
+            description: rubric.description,
+            weight: rubric.weight,
+            scoringGuide: rubric.scoringGuide,
+        };
 
         const newId = createId();
 
-        // Simpan ke database menggunakan Prisma Raw Query
-        // Perhatikan: Gunakan $executeRawUnsafe karena kita perlu membangun string query secara dinamis
-        // untuk menyisipkan nilai vektor yang sudah diformat.
+        logger.info(
+            `Embedding and saving "${rubric.parameterName}" to the database...`
+        );
         await prisma.$executeRawUnsafe(
-            'INSERT INTO vectorembeddings (id, content, metadata, embedding) VALUES ($1, $2, $3, $4::vector)',
+            "INSERT INTO vectorembeddings (id, content, metadata, embedding) VALUES ($1, $2, $3, $4::vector)",
             newId,
-            rubric.content,
-            rubric.metadata,
-            pgvector.toSql(embeddingArray),
+            contentToEmbed,
+            metadata,
+            pgvector.toSql(embeddingArray)
         );
     }
 

@@ -2,6 +2,13 @@ import 'dotenv/config';
 import bcrypt from "bcrypt";
 import prisma from "../db/prisma.js";
 
+/**
+ * Seed a default admin user into the database.
+ * 
+ * This script checks for the existence of an admin user with the email
+ * specified in the environment variables. If not found, it creates
+ * default admin user with the provided email and password.
+ */
 async function main() {
     const adminEmail = process.env.INITIAL_ADMIN_EMAIL;
     const adminPassword = process.env.INITIAL_ADMIN_PASSWORD;
@@ -12,7 +19,6 @@ async function main() {
         );
     }
 
-    // Periksa apakah admin sudah ada
     const existingAdmin = await prisma.user.findUnique({
         where: { email: adminEmail },
     });
@@ -22,16 +28,14 @@ async function main() {
         return;
     }
 
-    // Hash password
     const hashedPassword = await bcrypt.hash(adminPassword, 10);
 
-    // Buat user admin baru
     await prisma.user.create({
         data: {
             name: "Default Admin",
             email: adminEmail,
             password: hashedPassword,
-            role: "ADMIN", // Secara eksplisit mengatur perannya sebagai ADMIN
+            role: "ADMIN",
         },
     });
 

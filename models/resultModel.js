@@ -1,8 +1,11 @@
 import prisma from '../helpers/db/prisma.js';
 /**
- * Mencari sebuah pekerjaan evaluasi di database berdasarkan ID-nya.
- * @param {string} jobId - ID dari pekerjaan yang akan dicari.
- * @returns {Promise<object|null>} - Objek pekerjaan jika ditemukan, atau null jika tidak.
+ * Finds a job by its ID and returns the job details along with the result.
+ * 
+ * @async
+ * @function findJobById
+ * @param {string} jobId - The ID of the job to find.
+ * @returns {Promise<Object|null>} The job object if found, otherwise null.
  */
 export const findJobById = async (jobId) => {
   const job = await prisma.evaluationJob.findUnique({

@@ -1835,3 +1835,409 @@
 29-09-2025 23:03:09:39 [32minfo[39m: [32mProcessing job cmg59cdzo0005i0knoy1bwqzw...[39m
 29-09-2025 23:03:11:311 [31merror[39m: [31mGemini API Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent: [503 Service Unavailable] The model is overloaded. Please try again later.[39m
 29-09-2025 23:03:11:311 [31merror[39m: [31mJob cmg59cdzo0005i0knoy1bwqzw failed: Failed to generate response from Gemini.[39m
+30-09-2025 21:57:31:5731 [32minfo[39m: [32mServer is running on port 3000[39m
+30-09-2025 21:57:31:5731 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+30-09-2025 21:57:49:5749 [36mhttp[39m: [36m::1 POST /api/v1/auth/login 200 416 - 360.341 ms[39m
+[36m[39m
+30-09-2025 22:00:06:06 [36mhttp[39m: [36m::1 POST /api/v1/cv/upload 201 596 - 63.673 ms[39m
+[36m[39m
+30-09-2025 22:00:33:033 [36mhttp[39m: [36m::1 POST /api/v1/cv/evaluate 202 52 - 47.176 ms[39m
+[36m[39m
+30-09-2025 22:00:33:033 [32minfo[39m: [32mProcessing job cmg6mkj2j0003i0uza3hpgbd4...[39m
+30-09-2025 22:00:45:045 [31merror[39m: [31mGemini API Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent: [503 Service Unavailable] The model is overloaded. Please try again later.[39m
+30-09-2025 22:00:45:045 [31merror[39m: [31mJob cmg6mkj2j0003i0uza3hpgbd4 failed: Failed to generate response from Gemini.[39m
+30-09-2025 22:00:48:048 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg6mkj2j0003i0uza3hpgbd4 200 113 - 11.394 ms[39m
+[36m[39m
+30-09-2025 22:00:51:051 [32minfo[39m: [32mProcessing job cmg6mkj2j0003i0uza3hpgbd4...[39m
+30-09-2025 22:01:05:15 [36mhttp[39m: [36m::1 POST /api/v1/cv/evaluate 202 52 - 15.655 ms[39m
+[36m[39m
+30-09-2025 22:01:11:111 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg6mkj2j0003i0uza3hpgbd4 200 56 - 11.303 ms[39m
+[36m[39m
+30-09-2025 22:01:23:123 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg6ml7o20005i0uzidixxlek 200 52 - 8.050 ms[39m
+[36m[39m
+30-09-2025 22:02:48:248 [31merror[39m: [31mGemini API Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent: [503 Service Unavailable] The model is overloaded. Please try again later.[39m
+30-09-2025 22:02:48:248 [31merror[39m: [31mJob cmg6mkj2j0003i0uza3hpgbd4 failed: Failed to generate response from Gemini.[39m
+30-09-2025 22:02:48:248 [32minfo[39m: [32mProcessing job cmg6ml7o20005i0uzidixxlek...[39m
+30-09-2025 22:02:54:254 [31merror[39m: [31mGemini API Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent: [503 Service Unavailable] The model is overloaded. Please try again later.[39m
+30-09-2025 22:02:54:254 [31merror[39m: [31mJob cmg6ml7o20005i0uzidixxlek failed: Failed to generate response from Gemini.[39m
+30-09-2025 22:02:59:259 [32minfo[39m: [32mProcessing job cmg6mkj2j0003i0uza3hpgbd4...[39m
+30-09-2025 22:03:02:32 [31merror[39m: [31mGemini API Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent: [503 Service Unavailable] The model is overloaded. Please try again later.[39m
+30-09-2025 22:03:02:32 [31merror[39m: [31mJob cmg6mkj2j0003i0uza3hpgbd4 failed: Failed to generate response from Gemini.[39m
+30-09-2025 22:03:02:32 [32minfo[39m: [32mProcessing job cmg6ml7o20005i0uzidixxlek...[39m
+30-09-2025 22:03:02:32 [31merror[39m: [31mGemini API Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent: [429 Too Many Requests] You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits.[39m
+[31m* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 2[39m
+[31mPlease retry in 57.245353041s. [{"@type":"type.googleapis.com/google.rpc.QuotaFailure","violations":[{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerMinutePerProjectPerModel-FreeTier","quotaDimensions":{"location":"global","model":"gemini-2.5-pro"},"quotaValue":"2"}]},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Learn more about Gemini API quotas","url":"https://ai.google.dev/gemini-api/docs/rate-limits"}]},{"@type":"type.googleapis.com/google.rpc.RetryInfo","retryDelay":"57s"}][39m
+30-09-2025 22:03:02:32 [31merror[39m: [31mJob cmg6ml7o20005i0uzidixxlek failed: Failed to generate response from Gemini.[39m
+30-09-2025 22:03:12:312 [32minfo[39m: [32mProcessing job cmg6ml7o20005i0uzidixxlek...[39m
+30-09-2025 22:03:15:315 [31merror[39m: [31mGemini API Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent: [503 Service Unavailable] The model is overloaded. Please try again later.[39m
+30-09-2025 22:03:15:315 [31merror[39m: [31mJob cmg6ml7o20005i0uzidixxlek failed: Failed to generate response from Gemini.[39m
+30-09-2025 22:08:18:818 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg6ml7o20005i0uzidixxlek 200 113 - 40.245 ms[39m
+[36m[39m
+30-09-2025 22:09:28:928 [36mhttp[39m: [36m::1 POST /api/v1/cv/evaluate 202 52 - 31.395 ms[39m
+[36m[39m
+30-09-2025 22:09:28:928 [32minfo[39m: [32mProcessing job cmg6mvzef0007i0uznsj4inlp...[39m
+30-09-2025 22:10:51:1051 [31merror[39m: [31mGemini API Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent: [503 Service Unavailable] The model is overloaded. Please try again later.[39m
+30-09-2025 22:10:51:1051 [31merror[39m: [31mJob cmg6mvzef0007i0uznsj4inlp failed: Failed to generate response from Gemini.[39m
+30-09-2025 22:10:56:1056 [32minfo[39m: [32mProcessing job cmg6mvzef0007i0uznsj4inlp...[39m
+30-09-2025 22:11:35:1135 [31merror[39m: [31mGemini API Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent: [503 Service Unavailable] The model is overloaded. Please try again later.[39m
+30-09-2025 22:11:35:1135 [31merror[39m: [31mJob cmg6mvzef0007i0uznsj4inlp failed: Failed to generate response from Gemini.[39m
+30-09-2025 22:11:45:1145 [32minfo[39m: [32mProcessing job cmg6mvzef0007i0uznsj4inlp...[39m
+30-09-2025 22:12:36:1236 [31merror[39m: [31mGemini API Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent: [503 Service Unavailable] The model is overloaded. Please try again later.[39m
+30-09-2025 22:12:36:1236 [31merror[39m: [31mJob cmg6mvzef0007i0uznsj4inlp failed: Failed to generate response from Gemini.[39m
+30-09-2025 22:38:48:3848 [36mhttp[39m: [36m::1 POST /api/v1/cv/evaluate 401 39 - 4.136 ms[39m
+[36m[39m
+30-09-2025 22:39:06:396 [36mhttp[39m: [36m::1 POST /api/v1/auth/refresh-token 200 221 - 48.948 ms[39m
+[36m[39m
+30-09-2025 22:39:12:3912 [36mhttp[39m: [36m::1 POST /api/v1/cv/evaluate 401 39 - 1.604 ms[39m
+[36m[39m
+30-09-2025 22:39:36:3936 [36mhttp[39m: [36m::1 POST /api/v1/auth/refresh-token 200 221 - 6.456 ms[39m
+[36m[39m
+30-09-2025 22:39:43:3943 [36mhttp[39m: [36m::1 POST /api/v1/cv/evaluate 202 52 - 23.768 ms[39m
+[36m[39m
+30-09-2025 22:39:43:3943 [32minfo[39m: [32mProcessing job cmg6nyw4y0009i0uz7vxhdjt6...[39m
+30-09-2025 22:41:04:414 [31merror[39m: [31mGemini API Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent: [503 Service Unavailable] The model is overloaded. Please try again later.[39m
+30-09-2025 22:41:04:414 [31merror[39m: [31mJob cmg6nyw4y0009i0uz7vxhdjt6 failed: Failed to generate response from Gemini.[39m
+30-09-2025 22:41:09:419 [32minfo[39m: [32mProcessing job cmg6nyw4y0009i0uz7vxhdjt6...[39m
+30-09-2025 22:41:10:4110 [31merror[39m: [31mGemini API Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent: [503 Service Unavailable] The model is overloaded. Please try again later.[39m
+30-09-2025 22:41:10:4110 [31merror[39m: [31mJob cmg6nyw4y0009i0uz7vxhdjt6 failed: Failed to generate response from Gemini.[39m
+30-09-2025 22:41:21:4121 [32minfo[39m: [32mProcessing job cmg6nyw4y0009i0uz7vxhdjt6...[39m
+30-09-2025 22:41:22:4122 [31merror[39m: [31mGemini API Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent: [503 Service Unavailable] The model is overloaded. Please try again later.[39m
+30-09-2025 22:41:22:4122 [31merror[39m: [31mJob cmg6nyw4y0009i0uz7vxhdjt6 failed: Failed to generate response from Gemini.[39m
+30-09-2025 22:47:29:4729 [32minfo[39m: [32mServer is running on port 3000[39m
+30-09-2025 22:47:29:4729 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+30-09-2025 22:48:05:485 [32minfo[39m: [32mServer is running on port 3000[39m
+30-09-2025 22:48:05:485 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+30-09-2025 22:48:14:4814 [32minfo[39m: [32mServer is running on port 3000[39m
+30-09-2025 22:48:14:4814 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+30-09-2025 22:48:42:4842 [32minfo[39m: [32mServer is running on port 3000[39m
+30-09-2025 22:48:42:4842 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+30-09-2025 22:49:03:493 [32minfo[39m: [32mServer is running on port 3000[39m
+30-09-2025 22:49:03:493 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+30-09-2025 22:49:22:4922 [32minfo[39m: [32mServer is running on port 3000[39m
+30-09-2025 22:49:22:4922 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+30-09-2025 22:49:44:4944 [32minfo[39m: [32mServer is running on port 3000[39m
+30-09-2025 22:49:44:4944 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+30-09-2025 22:50:14:5014 [32minfo[39m: [32mServer is running on port 3000[39m
+30-09-2025 22:50:14:5014 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+30-09-2025 22:50:18:5018 [32minfo[39m: [32mServer is running on port 3000[39m
+30-09-2025 22:50:18:5018 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+30-09-2025 22:53:41:5341 [32minfo[39m: [32mServer is running on port 3000[39m
+30-09-2025 22:53:41:5341 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+30-09-2025 22:54:15:5415 [32minfo[39m: [32mServer is running on port 3000[39m
+30-09-2025 22:54:15:5415 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+30-09-2025 23:10:56:1056 [32minfo[39m: [32mServer is running on port 3000[39m
+30-09-2025 23:10:56:1056 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+30-09-2025 23:12:34:1234 [32minfo[39m: [32mServer is running on port 3000[39m
+30-09-2025 23:12:34:1234 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+30-09-2025 23:13:11:1311 [32minfo[39m: [32mServer is running on port 3000[39m
+30-09-2025 23:13:11:1311 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+30-09-2025 23:13:34:1334 [32minfo[39m: [32mStarting seeding process...[39m
+30-09-2025 23:13:34:1334 [31merror[39m: [31m[39m
+[31mInvalid `prisma.vectorEmbedding.deleteMany()` invocation:[39m
+
+
+[31mError occurred during query execution:[39m
+[31mConnectorError(ConnectorError { user_facing_error: None, kind: QueryError(PostgresError { code: "23001", message: "update or delete on table \"vectorembeddings\" violates RESTRICT setting of foreign key constraint \"rubrics_embeddingId_fkey\" on table \"rubrics\"", severity: "ERROR", detail: Some("Key (id)=(k3o73et8lw3rfk9exbi32cjp) is referenced from table \"rubrics\"."), column: None, hint: None }), transient: false })[39m
+30-09-2025 23:15:29:1529 [36mhttp[39m: [36m::1 POST /api/v1/cv/evaluate 401 39 - 5.720 ms[39m
+[36m[39m
+30-09-2025 23:15:33:1533 [36mhttp[39m: [36m::1 POST /api/v1/auth/refresh-token 200 221 - 160.793 ms[39m
+[36m[39m
+30-09-2025 23:15:35:1535 [36mhttp[39m: [36m::1 POST /api/v1/cv/evaluate 202 52 - 21.096 ms[39m
+[36m[39m
+30-09-2025 23:15:35:1535 [32minfo[39m: [32mProcessing job cmg6p907w0001i0cv5w9zo89d...[39m
+30-09-2025 23:16:17:1617 [31merror[39m: [31mGemini API Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent: [503 Service Unavailable] The model is overloaded. Please try again later.[39m
+30-09-2025 23:16:17:1617 [31merror[39m: [31mJob cmg6p907w0001i0cv5w9zo89d failed: Failed to generate response from Gemini.[39m
+30-09-2025 23:16:22:1622 [32minfo[39m: [32mProcessing job cmg6p907w0001i0cv5w9zo89d...[39m
+30-09-2025 23:16:54:1654 [31merror[39m: [31mGemini API Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent: [503 Service Unavailable] The model is overloaded. Please try again later.[39m
+30-09-2025 23:16:54:1654 [31merror[39m: [31mJob cmg6p907w0001i0cv5w9zo89d failed: Failed to generate response from Gemini.[39m
+30-09-2025 23:17:04:174 [32minfo[39m: [32mProcessing job cmg6p907w0001i0cv5w9zo89d...[39m
+30-09-2025 23:18:59:1859 [31merror[39m: [31mGemini API Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent: [503 Service Unavailable] The model is overloaded. Please try again later.[39m
+30-09-2025 23:18:59:1859 [31merror[39m: [31mJob cmg6p907w0001i0cv5w9zo89d failed: Failed to generate response from Gemini.[39m
+01-10-2025 07:22:51:2251 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 07:22:51:2251 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 07:23:12:2312 [36mhttp[39m: [36m::1 POST /api/v1/cv/evaluate 401 39 - 13.579 ms[39m
+[36m[39m
+01-10-2025 07:23:17:2317 [36mhttp[39m: [36m::1 POST /api/v1/auth/refresh-token 200 221 - 172.127 ms[39m
+[36m[39m
+01-10-2025 07:23:19:2319 [36mhttp[39m: [36m::1 POST /api/v1/cv/evaluate 202 52 - 33.114 ms[39m
+[36m[39m
+01-10-2025 07:23:19:2319 [32minfo[39m: [32mProcessing job cmg76o92i0001i0zkq4een97a...[39m
+01-10-2025 07:24:56:2456 [32minfo[39m: [32mProcessing job cmg6p907w0001i0cv5w9zo89d...[39m
+01-10-2025 07:27:53:2753 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg6ml7o20005i0uzidixxlek 200 113 - 9.467 ms[39m
+[36m[39m
+01-10-2025 07:28:04:284 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg76o92i0001i0zkq4een97a 200 363 - 8.094 ms[39m
+[36m[39m
+01-10-2025 07:29:19:2919 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg6p907w0001i0cv5w9zo89d 200 350 - 26.481 ms[39m
+[36m[39m
+01-10-2025 08:27:22:2722 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg76o92i0001i0zkq4een97a 401 39 - 4.086 ms[39m
+[36m[39m
+01-10-2025 08:27:24:2724 [36mhttp[39m: [36m::1 POST /api/v1/auth/refresh-token 200 221 - 29.968 ms[39m
+[36m[39m
+01-10-2025 08:27:26:2726 [36mhttp[39m: [36m::1 GET /api/v1/cv/result/cmg76o92i0001i0zkq4een97a 200 363 - 5.974 ms[39m
+[36m[39m
+01-10-2025 08:32:29:3229 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 08:32:29:3229 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 08:32:47:3247 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 08:32:47:3247 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 08:34:02:342 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 08:34:02:342 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 08:38:43:3843 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 08:38:43:3843 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 08:39:15:3915 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 08:39:15:3915 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 08:40:42:4042 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 08:40:42:4042 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 08:42:12:4212 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 08:42:12:4212 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 08:44:19:4419 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 08:44:19:4419 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 08:44:27:4427 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 08:44:27:4427 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 08:45:03:453 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 08:45:04:454 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 08:45:07:457 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 08:45:07:457 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 08:52:09:529 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 08:52:09:529 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 08:53:42:5342 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 08:53:42:5342 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 08:54:16:5416 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 08:54:16:5416 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 08:54:25:5425 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 08:54:25:5425 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 08:54:50:5450 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 08:54:50:5450 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 08:54:58:5458 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 08:54:58:5458 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 08:58:49:5849 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 08:58:49:5849 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 09:00:07:07 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 09:00:07:07 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 09:00:33:033 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 09:00:33:033 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 09:00:59:059 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 09:00:59:059 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 09:04:04:44 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 09:04:04:44 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 09:04:08:48 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 09:04:08:48 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 09:04:28:428 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 09:04:28:428 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 09:04:57:457 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 09:04:57:457 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 09:10:29:1029 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 09:10:29:1029 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 09:11:18:1118 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 09:11:18:1118 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 09:18:18:1818 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 09:18:18:1818 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 09:18:44:1844 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 09:18:44:1844 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 09:26:10:2610 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 09:26:10:2610 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 09:27:01:271 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 09:27:01:271 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 09:27:09:279 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 09:27:09:279 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 09:29:49:2949 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 09:29:49:2949 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 09:36:25:3625 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 09:36:25:3625 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 09:37:23:3723 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 09:37:23:3723 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 09:41:20:4120 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 09:41:20:4120 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 09:42:05:425 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 09:42:05:425 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 09:42:55:4255 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 09:42:55:4255 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 09:43:43:4343 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 09:43:43:4343 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 09:45:18:4518 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 09:45:18:4518 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 09:46:07:467 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 09:46:07:467 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 09:46:59:4659 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 09:46:59:4659 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 09:50:14:5014 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 09:50:14:5014 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 09:50:38:5038 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 09:50:38:5038 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 09:50:53:5053 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 09:50:53:5053 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 09:56:50:5650 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 09:56:50:5650 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 09:58:28:5828 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 09:58:28:5828 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 09:58:44:5844 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 09:58:44:5844 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 09:58:53:5853 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 09:58:53:5853 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 09:59:11:5911 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 09:59:11:5911 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 10:00:43:043 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 10:00:43:043 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 10:01:06:16 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 10:01:06:16 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 10:01:23:123 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 10:01:23:123 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 10:01:29:129 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 10:01:29:129 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 10:03:31:331 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 10:03:31:331 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 10:03:40:340 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 10:03:40:340 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 10:06:31:631 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 10:06:31:631 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 10:07:48:748 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 10:07:48:748 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 10:07:55:755 [31merror[39m: [31mError occurred: listen EADDRINUSE: address already in use :::3000[39m
+01-10-2025 10:07:55:755 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 10:15:46:1546 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 10:15:46:1546 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 10:16:06:166 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 10:16:06:166 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 10:16:17:1617 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 10:16:17:1617 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 10:16:26:1626 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 10:16:26:1626 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 10:16:52:1652 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 10:16:52:1652 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 10:17:45:1745 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 10:17:45:1745 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 10:17:49:1749 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 10:17:49:1749 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 10:18:12:1812 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 10:18:12:1812 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 10:20:06:206 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 10:20:06:206 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 10:20:55:2055 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 10:20:55:2055 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 10:20:59:2059 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 10:20:59:2059 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 10:22:50:2250 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 10:22:50:2250 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 10:22:54:2254 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 10:22:54:2254 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 10:23:12:2312 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 10:23:12:2312 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 10:23:18:2318 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 10:23:18:2318 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 10:23:29:2329 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 10:23:29:2329 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 10:23:35:2335 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 10:23:35:2335 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 10:23:56:2356 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 10:23:56:2356 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 10:23:57:2357 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 10:23:57:2357 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 10:24:10:2410 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 10:24:10:2410 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 10:24:32:2432 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 10:24:32:2432 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 10:25:41:2541 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 10:25:41:2541 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 10:26:08:268 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 10:26:08:268 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 10:26:24:2624 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 10:26:24:2624 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 10:27:09:279 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 10:27:09:279 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 10:29:53:2953 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 10:29:53:2953 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 10:31:15:3115 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 10:31:15:3115 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 10:31:22:3122 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 10:31:22:3122 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 10:31:28:3128 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 10:31:28:3128 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 10:31:30:3130 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 10:31:30:3130 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 10:36:05:365 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 10:36:05:365 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 10:36:10:3610 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 10:36:10:3610 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 10:39:18:3918 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 10:39:18:3918 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 10:42:00:420 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 10:42:00:420 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 10:43:32:4332 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 10:43:32:4332 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 10:43:47:4347 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 10:43:47:4347 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 10:46:07:467 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 10:46:07:467 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 10:46:24:4624 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 10:46:24:4624 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 10:48:27:4827 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 10:48:27:4827 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 10:50:03:503 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 10:50:03:503 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 10:50:08:508 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 10:50:08:508 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 10:50:47:5047 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 10:50:47:5047 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 10:51:33:5133 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 10:51:33:5133 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 10:52:49:5249 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 10:52:49:5249 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 10:59:42:5942 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 10:59:42:5942 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 11:04:45:445 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 11:04:45:445 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 11:08:50:850 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 11:08:50:850 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 11:10:43:1043 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 11:10:43:1043 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 11:12:41:1241 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 11:12:41:1241 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 11:12:54:1254 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 11:12:54:1254 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 11:13:27:1327 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 11:13:27:1327 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 11:14:11:1411 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 11:14:11:1411 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 11:15:50:1550 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 11:15:50:1550 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 11:16:22:1622 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 11:16:22:1622 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 11:18:05:185 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 11:18:05:185 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 11:19:16:1916 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 11:19:16:1916 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 11:19:26:1926 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 11:19:26:1926 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 11:19:33:1933 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 11:19:33:1933 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 11:19:52:1952 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 11:19:52:1952 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 11:29:13:2913 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 11:29:13:2913 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 11:30:08:308 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 11:30:08:308 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 11:38:12:3812 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 11:38:12:3812 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 11:41:04:414 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 11:41:04:414 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 11:46:55:4655 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 11:46:55:4655 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 11:47:22:4722 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 11:47:22:4722 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 11:48:46:4846 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 11:48:46:4846 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 12:56:29:5629 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 12:56:29:5629 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 12:56:52:5652 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 12:56:52:5652 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 13:01:02:12 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 13:01:02:12 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 13:02:39:239 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 13:02:39:239 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 13:06:55:655 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 13:06:55:655 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 13:07:05:75 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 13:07:05:75 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 13:09:11:911 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 13:09:11:911 [32minfo[39m: [32mConnected to Redis via ioredis![39m
+01-10-2025 13:09:24:924 [32minfo[39m: [32mServer is running on port 3000[39m
+01-10-2025 13:09:24:924 [32minfo[39m: [32mConnected to Redis via ioredis![39m

@@ -6,6 +6,12 @@ import docxParser from 'docx-parser';
 import logger from '../logger/logger.js';
 import pdf from 'pdf-parse/lib/pdf-parse.js';
 
+/**
+ * Generates a unique filename by appending a unique identifier to the original filename.
+ *
+ * @param {string} originalName - The original name of the file, including its extension.
+ * @returns {string} A new filename with a unique identifier appended before the file extension.
+ */
 export const generateUniqueFilename = (originalName) => {
   const ext = path.extname(originalName);
   const baseName = path.basename(originalName, ext);
@@ -13,7 +19,7 @@ export const generateUniqueFilename = (originalName) => {
   return `${baseName}-${uniqueId}${ext}`;
 };
 
-// Konfigurasi Multer untuk menangani penyimpanan file
+// Multer configuration for file uploads
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
       cb(null, "uploads/");
@@ -24,18 +30,31 @@ const storage = multer.diskStorage({
   },
 });
 
+/**
+ * Middleware for handling file uploads using Multer.
+ * Configures the storage and sets a file size limit of 5MB.
+ */
 export const upload = multer({
   storage: storage,
   limits: {
-      fileSize: 5 * 1024 * 1024, // no larger than 5MB
+      fileSize: 5 * 1024 * 1024, // max size 5MB
   },
 });
 
+
 /**
- * Membaca konten dari sebuah file berdasarkan path-nya dan mengonversinya menjadi teks.
- * Mendukung file .txt, .pdf, dan .docx.
- * @param {string} filePath - Path lengkap ke file.
- * @returns {Promise<string>} - Konten teks dari file.
+ * Reads the content of a file and parses it based on its extension.
+ *
+ * @async
+ * @function readFileContent
+ * @param {string} filePath - The path to the file to be read.
+ * @returns {Promise<string>} The content of the file as a string.
+ * @throws {Error} If the file type is unsupported or if there is an error reading or parsing the file.
+ *
+ * Supported file types:
+ * - `.txt`: Returns the content as plain text.
+ * - `.pdf`: Extracts and returns the text content of the PDF.
+ * - `.docx`: Extracts and returns the text content of the Word document.
  */
 export const readFileContent = async (filePath) => {
   const extension = path.extname(filePath).toLowerCase();

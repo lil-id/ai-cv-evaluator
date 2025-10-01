@@ -14,6 +14,12 @@ import {
 
 const authController = Router();
 
+/**
+ * @route POST /auth/register
+ * @desc Register a new recruiter (Admin only)
+ * @body { name, email, password, role }
+ * @returns { id, name, email, role, createdAt, updatedAt }
+ */
 authController.post("/register", isAuthenticated, isAdmin,  async (req, res) => {
     const { error } = registerSchema.validate(req.body);
     if (error) {
@@ -33,6 +39,13 @@ authController.post("/register", isAuthenticated, isAdmin,  async (req, res) => 
     }
 });
 
+/**
+ * @route POST /auth/login
+ * @access Public
+ * @desc Login as recruiter
+ * @body { email, password }
+ * @returns { accessToken, refreshToken }
+ */
 authController.post("/login", async (req, res) => {
     const { error } = loginSchema.validate(req.body);
     if (error) {
@@ -49,6 +62,13 @@ authController.post("/login", async (req, res) => {
     }
 });
 
+/**
+ * @route POST /auth/refresh-token
+ * @access Public
+ * @desc Refresh access token
+ * @body { refreshToken }
+ * @returns { accessToken }
+ */
 authController.post("/refresh-token", async (req, res) => {
     const { error } = refreshSchema.validate(req.body);
     if (error) {

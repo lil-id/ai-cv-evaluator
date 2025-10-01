@@ -1,7 +1,7 @@
-import resultCVController from '../controllers/resultCVController.js';
+import resultController from '../controllers/resultController.js';
 
 const setResultRoutes = (router) => {
-    router.use('/cv', resultCVController);
+    router.use('/cv', resultController);
 }
 
 export default setResultRoutes;
